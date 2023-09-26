@@ -53,3 +53,42 @@ ul li:hover ul.dropdown{
 }
 
 
+header{
+    background:palegoldenrod;
+    height: 581px;
+    background-image: url(../image/photo_2023-09-26_12-16-04.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:right ;
+    display: flex;
+    align-items: center;
+}
+.bg-img{
+    color: white;
+    background: rgba(228, 153, 14, 0.269);
+    backdrop-filter:1px;
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    h1{
+        font-size: 90px;
+        padding: 20px;
+    }
+    .user-quote p{
+        font-size:20px;
+        padding: 20px;
+        font-style: italic;
+       
+    }
+    .user-quote{
+        width:350px;
+    }
+    .user-time p{
+        font-size: 30px;
+        padding: 20px;
+    }
+    .user-info p{
+        font-size: 30px;
+        padding: 20px;
+    }
+}
