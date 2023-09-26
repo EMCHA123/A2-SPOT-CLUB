@@ -59,12 +59,6 @@ ul li:hover ul.dropdown {
   display: block;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  font-family: sans-serif;
-}
-
 header {
   background: palegoldenrod;
   height: 581px;
@@ -104,4 +98,25 @@ header {
 .bg-img .user-info p {
   font-size: 30px;
   padding: 20px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.weightlifting-sport {
+  background: #FBB33A;
+  height: 650px;
+}
+.weightlifting-sport .wet-spt {
+  background: magenta;
+  width: 50px;
+}
+.weightlifting-sport .iamge {
+  background: mediumaquamarine;
+}
+.weightlifting-sport .infor {
+  background: mediumseagreen;
 }/*# sourceMappingURL=main.css.map */
