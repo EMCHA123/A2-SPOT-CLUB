@@ -1,78 +1,102 @@
 @import "./components/navbar";
-*{
+
+* {
     padding: 0;
     margin: 0;
     font-family: sans-serif;
 }
-header{
-    background:palegoldenrod;
+
+header {
+    background: palegoldenrod;
     height: 581px;
     background-image: url(../image/photo_2023-09-26_12-16-04.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position:right ;
+    background-position: right;
     display: flex;
     align-items: center;
 }
-.bg-img{
+
+.bg-img {
     color: white;
     background: rgba(228, 153, 14, 0.269);
-    backdrop-filter:1px;
+    backdrop-filter: 1px;
     width: 800px;
     height: 500px;
     border-radius: 10px;
-    h1{
+
+    h1 {
         font-size: 90px;
         padding: 20px;
     }
-    .user-quote p{
-        font-size:20px;
+
+    .user-quote p {
+        font-size: 20px;
         padding: 20px;
         font-style: italic;
-       
+
     }
-    .user-quote{
-        width:350px;
+
+    .user-quote {
+        width: 350px;
     }
-    .user-time p{
+
+    .user-time p {
         font-size: 30px;
         padding: 20px;
     }
-    .user-info p{
+
+    .user-info p {
         font-size: 30px;
         padding: 20px;
     }
-    
+
 }
+
 // Channy
-.about-us{
+.about-us {
     background-image: url(/image/about-us.jpg);
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
-    h1{
+
+    h1 {
         background-color: rgba(0, 0, 0, 0.729);
         color: white;
         width: 15%;
         padding: 10px;
         border-radius: 0 0 20px 0;
     }
-    .about{
+
+    .about {
         background-color: rgba(255, 166, 0, 0.51);
         width: 600px;
         height: 320px;
-        margin:100px 0 0 0;
+        margin: 100px 0 0 0;
         border-radius: 0 20px 20px 0;
-        .mission ,.vision{
+
+        .mission,
+        .vision {
             color: white;
-            padding:  40px 25px 0 40px;
-            p{
+            padding: 40px 25px 0 40px;
+
+            p {
                 padding: 5px;
-                span{
+
+                span {
                     color: black;
                 }
             }
         }
     }
+}
+
+
+// <....kadin....>
+.video {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }

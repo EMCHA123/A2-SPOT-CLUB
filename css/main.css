@@ -168,13 +168,23 @@ header {
   margin: 100px 0 0 0;
   border-radius: 0 20px 20px 0;
 }
-.about-us .about .mission, .about-us .about .vision {
+.about-us .about .mission,
+.about-us .about .vision {
   color: white;
   padding: 40px 25px 0 40px;
 }
-.about-us .about .mission p, .about-us .about .vision p {
+.about-us .about .mission p,
+.about-us .about .vision p {
   padding: 5px;
 }
-.about-us .about .mission p span, .about-us .about .vision p span {
+.about-us .about .mission p span,
+.about-us .about .vision p span {
   color: black;
+}
+
+.video {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }/*# sourceMappingURL=main.css.map */
