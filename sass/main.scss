@@ -100,3 +100,66 @@ header {
     flex-direction: column;
     gap: 1.5rem;
 }
+
+// <..cha..>
+.gym-wieg{
+    background:orange;
+    height: 730px;
+    margin-top: 20px;
+}
+.wieg{
+    width: 20px;
+    height:120px;
+}
+.image{
+    height: 452px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+}
+.card{
+    width: 300px;
+    height: 500px;
+    margin-top:35px;
+}
+
+.man,.woman{
+    background:black;
+    color: white;
+    font-size: 30px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 20px 0px 0px;
+}
+.man{
+    border-radius: 20px 0px 0px 0px;
+}
+.infor{
+    background:rgba(0, 0, 0, 0.31);
+    height: 140px;
+}
+.infor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    font-size: 25px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+.wieg>h1{
+    background: #000;
+    height: 80px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    border-radius: 0px 0px 20px 0px;
+}
