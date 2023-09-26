@@ -100,6 +100,7 @@ header {
   padding: 20px;
 }
 
+<<<<<<< HEAD
 * {
   padding: 0;
   margin: 0;
@@ -119,4 +120,36 @@ header {
 }
 .weightlifting-sport .infor {
   background: mediumseagreen;
+=======
+.about-us {
+  background-image: url(/image/about-us.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+.about-us h1 {
+  background-color: rgba(0, 0, 0, 0.729);
+  color: white;
+  width: 15%;
+  padding: 10px;
+  border-radius: 0 0 20px 0;
+}
+.about-us .about {
+  background-color: rgba(255, 166, 0, 0.51);
+  width: 600px;
+  height: 320px;
+  margin: 100px 0 0 0;
+  border-radius: 0 20px 20px 0;
+}
+.about-us .about .mission, .about-us .about .vision {
+  color: white;
+  padding: 40px 25px 0 40px;
+}
+.about-us .about .mission p, .about-us .about .vision p {
+  padding: 5px;
+}
+.about-us .about .mission p span, .about-us .about .vision p span {
+  color: black;
+>>>>>>> 5cc20b9f1a7f8008e3b8d7f42495b506fed7b3e8
 }/*# sourceMappingURL=main.css.map */
