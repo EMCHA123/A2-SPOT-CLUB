@@ -304,4 +304,82 @@ p {
   width: 300px;
   height: 200px;
   margin: 10px;
+}
+
+.running {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(199, 218, 218);
+  height: 100vh;
+}
+
+.running-left {
+  width: 50%;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+.running-right {
+  display: flex;
+  gap: 70px;
+  flex-direction: column;
+  background-color: rgb(253, 209, 63);
+  width: 50%;
+  font: 1.6em sans-serif;
+  color: white;
+}
+
+.running-right > .top {
+  display: flex;
+}
+
+.running-right > .top > .top-left {
+  flex: 3;
+}
+
+.running-right > .top > .top-right {
+  background: rgba(0, 0, 0, 0.6156862745);
+  align-items: end;
+  height: 8vh;
+  width: 30%;
+  text-align: center;
+  border-radius: 0px 0px 0px 10px;
+}
+
+.running-right > .contant {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.contant > h1 > span {
+  color: black;
+}
+
+.contant-card {
+  display: flex;
+  flex-direction: row;
+}
+
+.running-right > .contant-card {
+  display: flex;
+  justify-content: space-evenly;
+  color: black;
+}
+
+.contant-card > .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card > span {
+  border-radius: 50%;
+  border: 2px solid;
+}
+
+.card > p {
+  color: black;
 }/*# sourceMappingURL=main.css.map */
