@@ -311,6 +311,7 @@ p {
   justify-content: center;
   background-color: rgb(199, 218, 218);
   height: 100vh;
+  margin-top: 10px;
 }
 
 .running-left {
@@ -323,7 +324,7 @@ p {
   display: flex;
   gap: 70px;
   flex-direction: column;
-  background-color: rgb(253, 209, 63);
+  background-color: orange;
   width: 50%;
   font: 1.6em sans-serif;
   color: white;

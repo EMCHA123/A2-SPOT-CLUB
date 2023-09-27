@@ -221,27 +221,31 @@ p {
     height: 200px;
     margin: 10px;
 }
+
 // kadin
 .running {
     display: flex;
     justify-content: center;
     background-color: rgb(199, 218, 218);
     height: 100vh;
-    
+    margin-top: 10px;
+
 }
+
 .running-left {
     width: 50%;
     background-repeat: repeat;
     background-size: cover;
 }
+
 .running-right {
     display: flex;
     gap: 70px;
     flex-direction: column;
-    background-color: rgb(253, 209, 63);
+    background-color: orange;
     width: 50%;
     font: 1.6em sans-serif;
-    color: white;   
+    color: white;
 }
 
 .running-right>.top {
@@ -251,6 +255,7 @@ p {
 .running-right>.top>.top-left {
     flex: 3;
 }
+
 .running-right>.top>.top-right {
     background: #0000009d;
     align-items: end;
@@ -259,6 +264,7 @@ p {
     text-align: center;
     border-radius: 0px 0px 0px 10px;
 }
+
 .running-right>.contant {
     display: flex;
     justify-content: center;
@@ -266,28 +272,34 @@ p {
     flex-direction: column;
     gap: 50px;
 }
+
 .contant>h1>span {
     color: black;
 }
-.contant-card{
+
+.contant-card {
     display: flex;
     flex-direction: row;
 }
-.running-right>.contant-card{
+
+.running-right>.contant-card {
     display: flex;
     justify-content: space-evenly;
-    color: black;   
+    color: black;
 }
-.contant-card>.card{
+
+.contant-card>.card {
     display: flex;
     flex-direction: column;
     align-items: center;
-  
+
 }
-.card>span{
-    border-radius:50%;
-    border:2px solid ;
+
+.card>span {
+    border-radius: 50%;
+    border: 2px solid;
 }
-.card>p{
+
+.card>p {
     color: black;
 }
