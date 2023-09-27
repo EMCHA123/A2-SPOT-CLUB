@@ -369,6 +369,10 @@ p {
     font-size: 50px;
 }
 
+.para1 p {
+    color: #000;
+}
+
 .picture>img {
     width: 318px;
     height: 300px;
@@ -378,7 +382,6 @@ p {
 .spt-battle3 {
     height: 120px;
     width: 100%;
-    color: white;
     font-size: 30px;
     display: flex;
     justify-content: center;
@@ -391,3 +394,57 @@ p {
     width: 90%;
 }
 
+// channy
+.volleyball {
+    background-color: orange;
+    width: 100%;
+    height: 600px;
+    margin-top: 20px;
+}
+
+.volleyball h1 {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 15%;
+    padding: 10px;
+    border-radius: 0 0 20px 0;
+}
+
+.volleyball-oficons {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.card1,
+.card2,
+.card3 {
+    width: 30%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card1>.material-icons,
+.card2>.material-icons,
+.card3>.material-icons {
+    font-size: 300%;
+    color: white;
+}
+
+.volleyball1,
+.volleyball2,
+.volleyball3 {
+    width: 300px;
+    margin-top: 20px;
+}
+
+.card1 p,
+.card2 p,
+.card3 p {
+    font-size: 30px;
+    padding: 35px;
+    text-align: center;
+    color: #000;
+}
