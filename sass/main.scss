@@ -367,7 +367,9 @@ p {
 .para1>.material-icons {
     font-size: 50px;
 }
-
+.para1 p{
+    color: #000;
+}
 .picture>img {
     width: 318px;
     height: 300px;
@@ -377,7 +379,6 @@ p {
 .spt-battle3 {
     height: 120px;
     width: 100%;
-    color: white;
     font-size: 30px;
     display: flex;
     justify-content: center;
