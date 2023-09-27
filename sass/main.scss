@@ -55,24 +55,26 @@ header {
 
 // Channy
 .about-us {
-    background-image: url(/image/about-us.jpg);
+    background-image: url(/image/new-about.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100vh;
+    height: 600px;
+    margin-top: 20px;
 
     h1 {
         background-color: rgba(0, 0, 0, 0.729);
         color: white;
         width: 15%;
+        font-size: 40px;
         padding: 10px;
         border-radius: 0 0 20px 0;
     }
 
     .about {
-        background-color: rgba(255, 166, 0, 0.51);
+        background-color: rgba(0, 0, 0, 0.51);
         width: 600px;
-        height: 320px;
+        height: 350px;
         margin: 100px 0 0 0;
         border-radius: 0 20px 20px 0;
 
@@ -83,9 +85,10 @@ header {
 
             p {
                 padding: 5px;
+                font-size: 20px;
 
                 span {
-                    color: black;
+                    color: orange;
                 }
             }
         }
@@ -577,3 +580,69 @@ p {
     border-radius: 15px;
 
 }
+// channy
+.swimming {
+    background-color: orange;
+    width: 100%;
+    height: 600px;
+    margin-top: 20px;
+}
+
+.swimming h1 {
+    background-color: black;
+    color: white;
+    width: 15%;
+    height: 60px;
+    text-align: center;
+    border-radius: 0 0 20px 0;
+}
+
+.swimming>p {
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+}
+
+.photo-swim {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.photo-swim>.card1,
+.photo-swim>.card2,
+.photo-swim>.card3 {
+    width: 20%;
+    height: 400px;
+}
+
+.swimming1,
+.swimming2,
+.swimming3 {
+    width: 300px;
+    height: 250px;
+    margin-top: 20px;
+    border-radius: 20px 20px 0 0;
+}
+
+.benefit {
+    background-color: rgba(176, 138, 51, 0.693);
+    width: 300px;
+    height: 90px;
+    display: flex;
+    border-radius: 0 0 20px 20px;
+}
+
+.benefit>p {
+    font-size: 20px;
+    padding: 30px;
+}
+.benefit>.material-icons {
+    background-color: gray;
+    font-size: 200%;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 5px;
+    margin: auto;
+    margin-right:  10px;
+
+} 
