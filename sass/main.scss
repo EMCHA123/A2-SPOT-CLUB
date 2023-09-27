@@ -102,30 +102,34 @@ header {
 }
 
 // <..cha..>
-.gym-wieg{
-    background:orange;
+.gym-wieg {
+    background: orange;
     height: 730px;
     margin-top: 20px;
 }
-.wieg{
+
+.wieg {
     width: 20px;
-    height:120px;
-}
-.image{
-    height: 452px;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    
-}
-.card{
-    width: 300px;
-    height: 500px;
-    margin-top:35px;
+    height: 120px;
 }
 
-.man,.woman{
-    background:black;
+.image {
+    height: 452px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card {
+    width: 300px;
+    height: 500px;
+    margin-top: 35px;
+}
+
+.man,
+.woman {
+    background: black;
     color: white;
     font-size: 30px;
     height: 40px;
@@ -134,26 +138,31 @@ header {
     align-items: center;
     border-radius: 0px 20px 0px 0px;
 }
-.man{
+
+.man {
     border-radius: 20px 0px 0px 0px;
 }
-.infor{
-    background:rgba(0, 0, 0, 0.31);
+
+.infor {
+    background: rgba(0, 0, 0, 0.31);
     height: 140px;
 }
-.infor{
+
+.infor {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.infor>p{
+
+.infor>p {
     font-size: 25px;
     color: white;
     display: flex;
     justify-content: center;
     width: 90%;
 }
-.wieg>h1{
+
+.wieg>h1 {
     background: #000;
     height: 80px;
     color: white;
@@ -162,4 +171,53 @@ header {
     align-items: center;
     width: 300px;
     border-radius: 0px 0px 20px 0px;
+}
+
+// -channy-
+.yuga {
+    background-color: orange;
+    height: 600px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.yuga h1 {
+    background-color: black;
+    width: 10%;
+    padding: 10px;
+    border-radius: 0 0 20px 0;
+}
+
+.yuga h1,
+p {
+    color: white;
+}
+
+.infromation {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+}
+
+.infromation p {
+    text-align: center;
+    font-size: 25px;
+    text-align: justify;
+
+}
+
+.yuga-first,
+.yuga-last {
+    display: flex;
+    justify-content: center;
+}
+
+.yoga1,
+.yoga2,
+.yoga3,
+.yoga4 {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
 }
