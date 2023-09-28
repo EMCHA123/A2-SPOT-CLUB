@@ -4,52 +4,54 @@ nav {
   display: flex;
   position: fixed;
 }
-
-.navbar-left {
+nav .navbar-left {
   width: 50%;
   background: #A5774E;
 }
-
-.user-img {
+nav .navbar-left .user-img {
   padding: 10px 0px 0px 20px;
 }
-
-.navbar-right {
+@media screen and (max-width: 768px) {
+  nav .navbar-left {
+    width: 30%;
+  }
+}
+nav .navbar-right {
   width: 50%;
   background: #A5774E;
 }
-
-ul {
+nav .navbar-right ul {
   display: flex;
   list-style: none;
   background: #A5774E;
   justify-content: space-evenly;
 }
-
-ul li {
+nav .navbar-right ul li {
   display: block;
   position: relative;
 }
-
-ul li a {
+nav .navbar-right ul li a {
   display: block;
-  padding: 20px 20px;
+  padding: 20px;
   color: white;
   text-decoration: none;
   text-align: center;
   font-size: 20px;
 }
-
-ul li ul.dropdown1 li {
+nav .navbar-right ul li .dropdown1 li {
   display: block;
 }
-
-ul li ul.dropdown {
+nav .navbar-right ul li .dropdown {
   width: 200%;
-  background: rgb(188, 120, 11);
+  background: orange;
   position: absolute;
   z-index: 999;
   display: none;
+}
+@media screen and (max-width: 768px) {
+  nav .navbar-right {
+    width: 70%;
+  }
 }
 
 ul li a:hover {
@@ -58,57 +60,10 @@ ul li a:hover {
 
 ul li:hover ul.dropdown {
   display: block;
-  background-color: rgba(13, 13, 13, 0.83);
+  background-color: rgba(0, 0, 0, 0.51);
 }
 
 #header {
-  background: palegoldenrod;
-  height: 581px;
-  background-image: url(../image/photo_2023-09-26_12-16-04.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: right;
-  display: flex;
-  align-items: center;
-}
-
-.bg-img {
-  color: white;
-  background: rgba(228, 153, 14, 0.269);
-  -webkit-backdrop-filter: 1px;
-          backdrop-filter: 1px;
-  width: 800px;
-  height: 500px;
-  border-radius: 10px;
-}
-.bg-img h1 {
-  font-size: 90px;
-  padding: 20px;
-}
-.bg-img .user-quote p {
-  font-size: 20px;
-  padding: 20px;
-  font-style: italic;
-}
-.bg-img .user-quote {
-  width: 350px;
-}
-.bg-img .user-time p {
-  font-size: 30px;
-  padding: 20px;
-}
-.bg-img .user-info p {
-  font-size: 30px;
-  padding: 20px;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  font-family: sans-serif;
-}
-
-header {
   background: palegoldenrod;
   height: 581px;
   background-image: url(../image/photo_2023-09-26_12-16-04.jpg);
@@ -134,19 +89,15 @@ header {
   padding: 20px;
   color: orange;
 }
+.bg-img .user-quote {
+  width: 350px;
+}
 .bg-img .user-quote p {
   font-size: 20px;
   padding: 20px;
   font-style: italic;
 }
-.bg-img .user-quote {
-  width: 350px;
-}
-.bg-img .user-time p {
-  font-size: 20px;
-  padding: 20px;
-}
-.bg-img .user-info p {
+.bg-img .user-time p, .bg-img .user-info p {
   font-size: 20px;
   padding: 20px;
 }
@@ -156,16 +107,22 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 600px;
+  height: 700px;
   margin-top: 20px;
 }
 #about-us h1 {
-  background-color: rgba(0, 0, 0, 0.729);
+  background-color: black;
   color: white;
   width: 15%;
   font-size: 40px;
   padding: 10px;
   border-radius: 0 0 20px 0;
+}
+@media screen and (max-width: 768px) {
+  #about-us h1 {
+    width: 20%;
+    font-size: 30px;
+  }
 }
 #about-us .about {
   background-color: rgba(0, 0, 0, 0.51);
@@ -189,6 +146,11 @@ header {
   color: orange;
 }
 
+@media screen and (max-width: 768px) {
+  #about-us {
+    background-position: right;
+  }
+}
 .video {
   align-items: center;
   display: flex;
@@ -196,12 +158,10 @@ header {
   gap: 1.5rem;
   margin-top: 20px;
 }
-
-.user-video h2 {
+.video .user-video h2 {
   font-size: 30px;
   color: orange;
 }
-
 .video p {
   color: #000;
   font-size: 20px;
@@ -212,38 +172,68 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 730px;
+  height: 700px;
   margin-top: 20px;
 }
-
-.wieg {
+#gym-wieg .wieg {
   width: 20px;
   height: 120px;
 }
-
-.image {
+#gym-wieg .wieg h1 {
+  background: #000000;
+  height: 70px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  border-radius: 0px 0px 20px 0px;
+}
+#gym-wieg .image {
   height: 452px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.card {
+#gym-wieg .image .card {
   width: 300px;
   height: 500px;
   margin-top: 35px;
 }
-
-.us-img1 img {
+#gym-wieg .image .card .us-img1 img {
   border-radius: 0px 0px 0px 10px;
 }
-
-.us-img2 img {
+#gym-wieg .image .card .us-img2 img {
   border-radius: 0px 0px 10px 0px;
 }
-
-.man,
-.woman {
+#gym-wieg .infor {
+  background: rgba(226, 169, 11, 0.701);
+  height: 140px;
+}
+@media screen and (max-width: 768px) {
+  #gym-wieg .infor {
+    height: 100px;
+  }
+}
+#gym-wieg .infor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#gym-wieg .infor p {
+  font-size: 25px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+@media screen and (max-width: 768px) {
+  #gym-wieg .infor p {
+    font-size: 15px;
+  }
+}
+#gym-wieg .man,
+#gym-wieg .woman {
   background-color: rgba(225, 165, 55, 0.804);
   color: white;
   font-size: 30px;
@@ -253,39 +243,8 @@ header {
   align-items: center;
   border-radius: 0px 10px 0px 0px;
 }
-
-.man {
+#gym-wieg .man {
   border-radius: 20px 0px 0px 0px;
-}
-
-.infor {
-  background: rgba(226, 169, 11, 0.701);
-  height: 140px;
-}
-
-.infor {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.infor > p {
-  font-size: 25px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  width: 90%;
-}
-
-.wieg > h1 {
-  background: #000000;
-  height: 70px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 230px;
-  border-radius: 0px 0px 20px 0px;
 }
 
 #yuga {
@@ -304,6 +263,11 @@ header {
   border-radius: 0 0 10px 0;
 }
 
+@media screen and (max-width: 768px) {
+  #yuga h1 {
+    font-size: 25px;
+  }
+}
 #yuga h1,
 p {
   color: white;
@@ -315,7 +279,6 @@ p {
   width: 90%;
   margin: auto;
 }
-
 .infromation p {
   background-color: rgba(0, 0, 0, 0.662745098);
   text-align: center;
@@ -323,6 +286,11 @@ p {
   text-align: justify;
   padding: 10px;
   margin: 10px;
+}
+@media screen and (max-width: 768px) {
+  .infromation p {
+    font-size: 20px;
+  }
 }
 
 .yuga-first,
@@ -373,15 +341,15 @@ p {
   padding-top: 20px;
 }
 
-.running-right > .top {
+.running-right .top {
   display: flex;
 }
 
-.running-right > .top > .top-left {
+.running-right .top .top-left {
   flex: 3;
 }
 
-.running-right > .top > .top-right {
+.running-right .top .top-right {
   background: black;
   align-items: end;
   height: 8vh;
@@ -390,7 +358,14 @@ p {
   border-radius: 0px 0px 0px 10px;
 }
 
-.running-right > .contant {
+@media screen and (max-width: 768px) {
+  .running-right .top .top-right {
+    font-size: 20px;
+    height: 5vh;
+    width: 40%;
+  }
+}
+.running-right .contant {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -398,7 +373,7 @@ p {
   gap: 50px;
 }
 
-.contant > h1 > span {
+.contant h1 span {
   color: black;
   font-style: italic;
 }
@@ -407,6 +382,11 @@ p {
   font-style: italic;
 }
 
+@media screen and (max-width: 768px) {
+  .running-right {
+    font-size: 20px;
+  }
+}
 .contant-card {
   display: flex;
   flex-direction: row;
@@ -418,18 +398,18 @@ p {
   color: black;
 }
 
-.contant-card > .card {
+.contant-card .card {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.card > span {
+.card span {
   border-radius: 50%;
   border: 2px solid;
 }
 
-.card > p {
+.card p {
   color: black;
 }
 
@@ -468,10 +448,16 @@ p {
 .user-box {
   display: flex;
   justify-content: center;
-  width: 70%;
+  width: 50%;
   gap: 20px;
 }
 
+@media screen and (max-width: 768px) {
+  .user-box {
+    width: 40%;
+    gap: 1px;
+  }
+}
 .box {
   width: 80%;
   height: 350px;
@@ -491,7 +477,7 @@ p {
   border-radius: 0px 0px 10px 10px;
 }
 
-.para1 > .material-icons {
+.para1 .material-icons {
   font-size: 50px;
 }
 
@@ -499,7 +485,7 @@ p {
   color: #000;
 }
 
-.picture > img {
+.picture img {
   width: 318px;
   height: 300px;
   border-radius: 10px 10px 0px 0px;
@@ -514,6 +500,11 @@ p {
   align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  .spt-battle3 {
+    font-size: 25px;
+  }
+}
 .battle3 {
   display: flex;
   width: 90%;
@@ -550,9 +541,9 @@ p {
   align-items: center;
 }
 
-.card1 > .material-icons,
-.card2 > .material-icons,
-.card3 > .material-icons {
+.card1 .material-icons,
+.card2 .material-icons,
+.card3 .material-icons {
   font-size: 300%;
   color: white;
 }
@@ -575,7 +566,7 @@ p {
 
 #sport-Tennis {
   background-color: rgba(225, 165, 55, 0.804);
-  height: 100vh;
+  height: 700px;
   margin-top: 20px;
 }
 
@@ -584,7 +575,7 @@ p {
   height: auto;
 }
 
-.Tennis-top > h1 {
+.Tennis-top h1 {
   background: black;
   height: 50px;
   color: white;
@@ -596,7 +587,7 @@ p {
   padding-top: 10px;
 }
 
-.Tennis-center > p {
+.Tennis-center p {
   font-size: 25px;
   color: black;
   display: flex;
@@ -662,8 +653,8 @@ p {
   width: 15%;
   height: 9vh;
   border-radius: 0 0 10px 0;
-  justify-content: center;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -708,7 +699,7 @@ p {
 #swimming {
   background-color: rgba(225, 165, 55, 0.804);
   width: 100%;
-  height: 600px;
+  height: 700px;
   margin-top: 20px;
 }
 
@@ -722,7 +713,7 @@ p {
   padding-top: 10px;
 }
 
-#swimming > p {
+#swimming p {
   color: #000;
   font-size: 30px;
   text-align: center;
@@ -734,9 +725,9 @@ p {
   justify-content: space-evenly;
 }
 
-.photo-swim > .card1,
-.photo-swim > .card2,
-.photo-swim > .card3 {
+.photo-swim .card1,
+.photo-swim .card2,
+.photo-swim .card3 {
   width: 20%;
   height: 400px;
 }
@@ -753,17 +744,17 @@ p {
 .benefit {
   background-color: rgba(176, 138, 51, 0.693);
   width: 300px;
-  height: 90px;
+  height: 110px;
   display: flex;
   border-radius: 0 0 20px 20px;
 }
 
-.benefit > p {
+.benefit p {
   font-size: 20px;
   padding: 30px;
 }
 
-.benefit > .material-icons {
+.benefit .material-icons {
   background-color: gray;
   font-size: 200%;
   border: 1px solid black;
@@ -777,7 +768,7 @@ p {
   background-image: url(/image/Contact\ us.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -832,7 +823,6 @@ form {
 .user-name {
   display: flex;
   justify-content: space-evenly;
-  padding-left: 10px;
 }
 
 .user-name input,
@@ -841,6 +831,7 @@ form {
 .select1,
 .select2,
 .select3 {
+  width: 170px;
   padding: 10px;
   border-radius: 5px;
   border: none;
@@ -851,12 +842,12 @@ form {
 
 .user-email input,
 .phone-number input {
-  width: 84%;
+  width: 80%;
 }
 
 .user-email,
 .phone-number {
-  padding: 15px 0px 0px 30px;
+  padding: 15px 0px 0px 20px;
 }
 
 .firs-name ion-icon,
@@ -869,7 +860,7 @@ form {
 .sport-type,
 .time-start,
 .time-end {
-  padding: 15px 0px 0px 60px;
+  padding: 15px 0px 0px 70px;
 }
 
 .select1,
@@ -893,7 +884,7 @@ form {
 }
 
 .user-button {
-  padding: 15px 0px 0px 60px;
+  padding: 15px 0px 0px 70px;
 }
 
 .user-button button {
@@ -921,23 +912,23 @@ footer {
   text-align: center;
 }
 
-footer > .card1,
-footer > .card2,
-footer > .card3 {
+footer .card1,
+footer .card2,
+footer .card3 {
   width: 30%;
   height: 300px;
 }
 
-footer > .card1 > h1,
-footer > .card2 > h1,
-footer > .card3 > h1 {
+footer .card1 > h1,
+footer .card2 > h1,
+footer .card3 > h1 {
   font-size: 20px;
   color: rgb(24, 24, 161);
 }
 
-footer > .card1 > p,
-footer > .card2 > p,
-footer > .card3 > p {
+footer .card1 p,
+footer .card2 p,
+footer .card3 p {
   color: rgb(13, 13, 160);
   font-size: 20px;
   padding: 15px;
@@ -967,24 +958,24 @@ ion-icon {
   padding: 0 10px;
 }
 
-.tik > ion-icon {
+.tik ion-icon {
   color: rgb(0, 0, 11);
 }
 
-.face > ion-icon,
-.tele > ion-icon {
+.face ion-icon,
+.tele ion-icon {
   color: blue;
 }
 
-.insta > ion-icon {
+.insta ion-icon {
   color: rgb(126, 0, 244);
 }
 
-.youtube > ion-icon {
+.youtube ion-icon {
   color: red;
 }
 
-.map > iframe {
+.map iframe {
   width: 300px;
   height: 200px;
   margin: 20px 0;
@@ -995,6 +986,12 @@ ion-icon {
   padding: 10px;
 }
 
-.address > span {
+.address span {
   color: rgb(11, 33, 143);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
 }/*# sourceMappingURL=main.css.map */
