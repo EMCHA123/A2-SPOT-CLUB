@@ -56,7 +56,7 @@ header {
 }
 
 // Channy
-.about-us {
+#about-us {
     background-image: url(/image/new-about.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -117,7 +117,7 @@ header {
 }
 
 // <..cha..>
-.gym-wieg {
+#gym-wieg {
     background-image: url(/image/backgroup-gym.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -200,7 +200,7 @@ header {
 }
 
 // -channy-
-.yuga {
+#yuga {
     background-image: url(/image/backgroup-yoga.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -209,14 +209,14 @@ header {
     margin-top: 20px;
 }
 
-.yuga h1 {
+#yuga h1 {
     background-color: black;
     width: 100px;
     padding: 10px;
     border-radius: 0 0 10px 0;
 }
 
-.yuga h1,
+#yuga h1,
 p {
     color: white;
 }
@@ -255,7 +255,7 @@ p {
 }
 
 // kadin
-.running {
+#running {
     display: flex;
     justify-content: center;
     background-color: rgb(199, 218, 218);
@@ -351,7 +351,7 @@ p {
 }
 
 // <.cha..>
-.battle-ropes {
+#battle-ropes {
     background-color: rgba(225, 165, 55, 0.804);
     height: 650px;
     margin-top: 20px;
@@ -441,14 +441,14 @@ p {
 }
 
 // channy
-.volleyball {
+#volleyball {
     background-color: rgba(225, 165, 55, 0.804);
     width: 100%;
     height: 600px;
     margin-top: 20px;
 }
 
-.volleyball h1 {
+#volleyball h1 {
     background-color: rgb(0, 0, 0);
     color: white;
     width: 150px;
@@ -496,7 +496,7 @@ p {
 }
 
 // kadin.........
-.sporrt-Tennis {
+#sport-Tennis {
     background-color: rgba(225, 165, 55, 0.804);
     height: 100vh;
     margin-top: 20px;
@@ -576,7 +576,7 @@ p {
 }
 
 // kadin............
-.sport-Basketball {
+#sport-Basketball {
     background-image: url(/image/new-basketball.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -585,7 +585,7 @@ p {
     margin-top: 20px;
 }
 
-.sport-Basketball>h1 {
+#sport-Basketball>h1 {
     background-color: black;
     width: 15%;
     height: 9vh;
@@ -595,7 +595,7 @@ p {
     align-items: center;
 }
 
-.sport-Basketball h1,
+#sport-Basketball h1,
 p {
     color: white;
 }
@@ -604,7 +604,7 @@ p {
     padding-top: 10px;
 }
 
-.sport-Basketball>.Basketball-top {
+#sport-Basketball>.Basketball-top {
     display: flex;
     justify-content: center;
     width: 90%;
@@ -635,14 +635,14 @@ p {
 }
 
 // channy
-.swimming {
+#swimming {
     background-color: rgba(225, 165, 55, 0.804);
     width: 100%;
     height: 600px;
     margin-top: 20px;
 }
 
-.swimming h1 {
+#swimming h1 {
     background-color: black;
     color: rgb(255, 255, 255);
     width: 15%;
@@ -652,7 +652,7 @@ p {
     padding-top: 10px;
 }
 
-.swimming>p {
+#swimming>p {
     color: #000;
     font-size: 30px;
     text-align: center;
@@ -705,7 +705,7 @@ p {
 }
 
 //< ..cha..>
-.contact-us {
+#contact-us {
     background-image: url(/image/Contact\ us.jpg);
     background-size: cover;
     background-repeat: no-repeat;
