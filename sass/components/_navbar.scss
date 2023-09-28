@@ -45,11 +45,12 @@ ul li ul.dropdown{
     display: none;
 }
 ul li a:hover{
-    background: rgb(188, 120, 11);
+    background: orange;
 
 }
 ul li:hover ul.dropdown{
     display: block;
+    background-color: rgba(13, 13, 13, 0.83);
 }
 
 

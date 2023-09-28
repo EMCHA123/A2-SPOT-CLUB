@@ -52,11 +52,12 @@ ul li ul.dropdown {
 }
 
 ul li a:hover {
-  background: rgb(188, 120, 11);
+  background: orange;
 }
 
 ul li:hover ul.dropdown {
   display: block;
+  background-color: rgba(13, 13, 13, 0.83);
 }
 
 header {
@@ -127,6 +128,7 @@ header {
   border-radius: 10px;
 }
 .bg-img h1 {
+  font-style: italic;
   font-size: 60px;
   padding: 20px;
   color: orange;
@@ -205,7 +207,10 @@ header {
 }
 
 .gym-wieg {
-  background: orange;
+  background-image: url(/image/backgroup-gym.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   height: 730px;
   margin-top: 20px;
 }
@@ -238,7 +243,7 @@ header {
 
 .man,
 .woman {
-  background: black;
+  background-color: rgba(225, 165, 55, 0.804);
   color: white;
   font-size: 30px;
   height: 40px;
@@ -253,7 +258,7 @@ header {
 }
 
 .infor {
-  background: rgba(0, 0, 0, 0.31);
+  background: rgba(226, 169, 11, 0.701);
   height: 140px;
 }
 
@@ -272,7 +277,7 @@ header {
 }
 
 .wieg > h1 {
-  background: #000;
+  background: #000000;
   height: 70px;
   color: white;
   display: flex;
@@ -283,8 +288,10 @@ header {
 }
 
 .yuga {
-  background-color: orange;
-  height: 600px;
+  background-image: url(/image/backgroup-yoga.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
   width: 100%;
   margin-top: 20px;
 }
@@ -309,9 +316,12 @@ p {
 }
 
 .infromation p {
+  background-color: rgba(0, 0, 0, 0.662745098);
   text-align: center;
   font-size: 25px;
   text-align: justify;
+  padding: 10px;
+  margin: 10px;
 }
 
 .yuga-first,
@@ -347,7 +357,7 @@ p {
   display: flex;
   gap: 70px;
   flex-direction: column;
-  background-color: orange;
+  background-color: rgba(225, 165, 55, 0.804);
   width: 50%;
   font: 1.6em sans-serif;
   color: white;
@@ -423,7 +433,7 @@ p {
 }
 
 .battle-ropes {
-  background: orange;
+  background-color: rgba(225, 165, 55, 0.804);
   height: 650px;
   margin-top: 20px;
 }
@@ -509,7 +519,7 @@ p {
 }
 
 .volleyball {
-  background-color: orange;
+  background-color: rgba(225, 165, 55, 0.804);
   width: 100%;
   height: 600px;
   margin-top: 20px;
@@ -563,7 +573,7 @@ p {
 }
 
 .sporrt-Tennis {
-  background-color: orange;
+  background-color: rgba(225, 165, 55, 0.804);
   height: 100vh;
   margin-top: 20px;
 }
@@ -638,8 +648,11 @@ p {
 }
 
 .sport-Basketball {
-  background-color: orange;
-  height: 100vh;
+  background-image: url(/image/new-basketball.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 700px;
   margin-top: 20px;
 }
 
@@ -692,7 +705,7 @@ p {
 }
 
 .swimming {
-  background-color: orange;
+  background-color: rgba(225, 165, 55, 0.804);
   width: 100%;
   height: 600px;
   margin-top: 20px;
@@ -700,7 +713,7 @@ p {
 
 .swimming h1 {
   background-color: black;
-  color: white;
+  color: rgb(255, 255, 255);
   width: 15%;
   height: 50px;
   text-align: center;
@@ -709,6 +722,7 @@ p {
 }
 
 .swimming > p {
+  color: #000;
   font-size: 30px;
   text-align: center;
   padding: 30px;
@@ -894,4 +908,92 @@ form {
 .user-button :hover {
   background: orange;
   color: white;
+}
+
+footer {
+  background-color: rgba(225, 165, 55, 0.804);
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+footer > .card1,
+footer > .card2,
+footer > .card3 {
+  width: 30%;
+  height: 300px;
+}
+
+footer > .card1 > h1,
+footer > .card2 > h1,
+footer > .card3 > h1 {
+  font-size: 20px;
+  color: rgb(24, 24, 161);
+}
+
+footer > .card1 > p,
+footer > .card2 > p,
+footer > .card3 > p {
+  color: rgb(13, 13, 160);
+  font-size: 20px;
+  padding: 15px;
+}
+
+.tik,
+.face,
+.tele,
+.insta,
+.youtube {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+.tik-tok,
+.facebook,
+.telegram,
+.instagram,
+.you-tube {
+  font-size: 20px;
+  color: rgb(13, 13, 160);
+}
+
+ion-icon {
+  font-size: 25px;
+  padding: 0 10px;
+}
+
+.tik > ion-icon {
+  color: rgb(0, 0, 11);
+}
+
+.face > ion-icon,
+.tele > ion-icon {
+  color: blue;
+}
+
+.insta > ion-icon {
+  color: rgb(126, 0, 244);
+}
+
+.youtube > ion-icon {
+  color: red;
+}
+
+.map > iframe {
+  width: 300px;
+  height: 200px;
+  margin: 20px 0;
+}
+
+.address {
+  color: black;
+  padding: 10px;
+}
+
+.address > span {
+  color: rgb(11, 33, 143);
 }/*# sourceMappingURL=main.css.map */

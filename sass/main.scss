@@ -3,7 +3,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-family:sans-serif;
+    font-family: sans-serif;
 }
 
 header {
@@ -26,6 +26,7 @@ header {
     border-radius: 10px;
 
     h1 {
+        font-style: italic;
         font-size: 60px;
         padding: 20px;
         color: orange;
@@ -96,7 +97,6 @@ header {
     }
 }
 
-
 // <....kadin....>
 .video {
     align-items: center;
@@ -105,17 +105,23 @@ header {
     gap: 1.5rem;
     margin-top: 20px;
 }
-.user-video h2{
+
+.user-video h2 {
     font-size: 30px;
     color: orange;
 }
-.video p{
+
+.video p {
     color: #000;
     font-size: 20px;
 }
+
 // <..cha..>
 .gym-wieg {
-    background: orange;
+    background-image: url(/image/backgroup-gym.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     height: 730px;
     margin-top: 20px;
 }
@@ -130,26 +136,26 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-   
-    
-
 }
 
 .card {
     width: 300px;
     height: 500px;
     margin-top: 35px;
-    
+
 }
-.us-img1 img{
+
+.us-img1 img {
     border-radius: 0px 0px 0px 10px;
 }
-.us-img2 img{
+
+.us-img2 img {
     border-radius: 0px 0px 10px 0px;
 }
+
 .man,
 .woman {
-    background: black;
+    background-color: rgba(225, 165, 55, 0.804);
     color: white;
     font-size: 30px;
     height: 40px;
@@ -164,7 +170,7 @@ header {
 }
 
 .infor {
-    background: rgba(0, 0, 0, 0.31);
+    background: rgba(226, 169, 11, 0.701);
     height: 140px;
 }
 
@@ -183,7 +189,7 @@ header {
 }
 
 .wieg>h1 {
-    background: #000;
+    background: #000000;
     height: 70px;
     color: white;
     display: flex;
@@ -195,8 +201,10 @@ header {
 
 // -channy-
 .yuga {
-    background-color: orange;
-    height: 600px;
+    background-image: url(/image/backgroup-yoga.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
     width: 100%;
     margin-top: 20px;
 }
@@ -221,9 +229,13 @@ p {
 }
 
 .infromation p {
+    background-color: #000000a9;
     text-align: center;
     font-size: 25px;
     text-align: justify;
+    padding: 10px;
+    margin: 10px;
+
 
 }
 
@@ -247,7 +259,7 @@ p {
     display: flex;
     justify-content: center;
     background-color: rgb(199, 218, 218);
-    height:700px;
+    height: 700px;
     margin-top: 20px;
 }
 
@@ -261,20 +273,22 @@ p {
     display: flex;
     gap: 70px;
     flex-direction: column;
-    background-color: orange;
+    background-color: rgba(225, 165, 55, 0.804);
     width: 50%;
     font: 1.6em sans-serif;
     color: white;
 }
 
-.top{
+.top {
     display: flex;
     justify-content: end;
-    
+
 }
-.top-right{
- padding-top: 20px;
+
+.top-right {
+    padding-top: 20px;
 }
+
 .running-right>.top {
     display: flex;
 }
@@ -284,7 +298,7 @@ p {
 }
 
 .running-right>.top>.top-right {
-    background:black;
+    background: black;
     align-items: end;
     height: 8vh;
     width: 30%;
@@ -305,7 +319,7 @@ p {
     font-style: italic;
 }
 
-.contant h1{
+.contant h1 {
     font-style: italic;
 }
 
@@ -338,7 +352,7 @@ p {
 
 // <.cha..>
 .battle-ropes {
-    background: orange;
+    background-color: rgba(225, 165, 55, 0.804);
     height: 650px;
     margin-top: 20px;
 }
@@ -428,7 +442,7 @@ p {
 
 // channy
 .volleyball {
-    background-color: orange;
+    background-color: rgba(225, 165, 55, 0.804);
     width: 100%;
     height: 600px;
     margin-top: 20px;
@@ -437,7 +451,7 @@ p {
 .volleyball h1 {
     background-color: rgb(0, 0, 0);
     color: white;
-    width:150px;
+    width: 150px;
     padding: 15px 40px;
     border-radius: 0 0 10px 0;
 }
@@ -483,7 +497,7 @@ p {
 
 // kadin.........
 .sporrt-Tennis {
-    background-color: orange;
+    background-color: rgba(225, 165, 55, 0.804);
     height: 100vh;
     margin-top: 20px;
 
@@ -495,13 +509,13 @@ p {
 }
 
 .Tennis-top>h1 {
-    background:black;
+    background: black;
     height: 50px;
     color: white;
     display: flex;
     justify-content: center;
     text-align: center;
-    width:150px ;
+    width: 150px;
     border-radius: 0px 0px 10px 0px;
     padding-top: 10px;
 }
@@ -514,7 +528,7 @@ p {
     width: 90%;
 }
 
-.tennis-icon1 p{
+.tennis-icon1 p {
     font-size: 20px;
     width: 300px;
     text-align: center;
@@ -563,12 +577,16 @@ p {
 
 // kadin............
 .sport-Basketball {
-    background-color: orange;
-    height: 100vh;
+    background-image: url(/image/new-basketball.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 700px;
     margin-top: 20px;
 }
+
 .sport-Basketball>h1 {
-    background-color:black;
+    background-color: black;
     width: 15%;
     height: 9vh;
     border-radius: 0 0 10px 0;
@@ -581,6 +599,7 @@ p {
 p {
     color: white;
 }
+
 .Basketball-top {
     padding-top: 10px;
 }
@@ -591,6 +610,7 @@ p {
     width: 90%;
     margin: auto;
 }
+
 .Basketball-top p {
     text-align: center;
     font-size: 25px;
@@ -613,9 +633,10 @@ p {
     border-radius: 15px;
 
 }
+
 // channy
 .swimming {
-    background-color: orange;
+    background-color: rgba(225, 165, 55, 0.804);
     width: 100%;
     height: 600px;
     margin-top: 20px;
@@ -623,7 +644,7 @@ p {
 
 .swimming h1 {
     background-color: black;
-    color: white;
+    color: rgb(255, 255, 255);
     width: 15%;
     height: 50px;
     text-align: center;
@@ -632,6 +653,7 @@ p {
 }
 
 .swimming>p {
+    color: #000;
     font-size: 30px;
     text-align: center;
     padding: 30px;
@@ -670,6 +692,7 @@ p {
     font-size: 20px;
     padding: 30px;
 }
+
 .benefit>.material-icons {
     background-color: gray;
     font-size: 200%;
@@ -677,9 +700,9 @@ p {
     border-radius: 50%;
     padding: 5px;
     margin: auto;
-    margin-right:  10px;
+    margin-right: 10px;
 
-} 
+}
 
 //< ..cha..>
 .contact-us {
@@ -816,4 +839,93 @@ form {
 .user-button :hover {
     background: orange;
     color: white;
+}
+
+// channy
+footer {
+    background-color: rgba(225, 165, 55, 0.804);
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+footer>.card1,
+footer>.card2,
+footer>.card3 {
+    width: 30%;
+    height: 300px;
+}
+
+footer>.card1>h1,
+footer>.card2>h1,
+footer>.card3>h1 {
+    font-size: 20px;
+    color: rgb(24, 24, 161);
+}
+
+footer>.card1>p,
+footer>.card2>p,
+footer>.card3>p {
+    color: rgb(13, 13, 160);
+    font-size: 20px;
+    padding: 15px;
+}
+
+.tik,
+.face,
+.tele,
+.insta,
+.youtube {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.tik-tok,
+.facebook,
+.telegram,
+.instagram,
+.you-tube {
+    font-size: 20px;
+    color: rgb(13, 13, 160);
+}
+
+ion-icon {
+    font-size: 25px;
+    padding: 0 10px;
+}
+
+.tik>ion-icon {
+    color: rgb(0, 0, 11);
+}
+
+.face>ion-icon,
+.tele>ion-icon {
+    color: blue;
+}
+
+.insta>ion-icon {
+    color: rgb(126, 0, 244);
+}
+
+.youtube>ion-icon {
+    color: red;
+}
+
+.map>iframe {
+    width: 300px;
+    height: 200px;
+    margin: 20px 0;
+}
+
+.address {
+    color: black;
+    padding: 10px;
+}
+
+.address>span {
+    color: rgb(11, 33, 143);
 }
