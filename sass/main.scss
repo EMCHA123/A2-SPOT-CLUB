@@ -3,7 +3,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
+    font-family:sans-serif;
 }
 
 header {
@@ -19,15 +19,16 @@ header {
 
 .bg-img {
     color: white;
-    background: rgba(228, 153, 14, 0.269);
+    background: rgba(213, 210, 201, 0.269);
     backdrop-filter: 1px;
-    width: 800px;
-    height: 500px;
+    width: 700px;
+    height: 400px;
     border-radius: 10px;
 
     h1 {
-        font-size: 90px;
+        font-size: 60px;
         padding: 20px;
+        color: orange;
     }
 
     .user-quote p {
@@ -42,12 +43,12 @@ header {
     }
 
     .user-time p {
-        font-size: 30px;
+        font-size: 20px;
         padding: 20px;
     }
 
     .user-info p {
-        font-size: 30px;
+        font-size: 20px;
         padding: 20px;
     }
 
@@ -102,8 +103,16 @@ header {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    margin-top: 20px;
 }
-
+.user-video h2{
+    font-size: 30px;
+    color: orange;
+}
+.video p{
+    color: #000;
+    font-size: 20px;
+}
 // <..cha..>
 .gym-wieg {
     background: orange;
@@ -132,7 +141,12 @@ header {
     margin-top: 35px;
     
 }
-
+.us-img1 img{
+    border-radius: 0px 0px 0px 10px;
+}
+.us-img2 img{
+    border-radius: 0px 0px 10px 0px;
+}
 .man,
 .woman {
     background: black;
@@ -142,7 +156,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 0px 20px 0px 0px;
+    border-radius: 0px 10px 0px 0px;
 }
 
 .man {
@@ -170,12 +184,12 @@ header {
 
 .wieg>h1 {
     background: #000;
-    height: 80px;
+    height: 70px;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 300px;
+    width: 230px;
     border-radius: 0px 0px 20px 0px;
 }
 
@@ -189,9 +203,9 @@ header {
 
 .yuga h1 {
     background-color: black;
-    width: 10%;
+    width: 100px;
     padding: 10px;
-    border-radius: 0 0 20px 0;
+    border-radius: 0 0 10px 0;
 }
 
 .yuga h1,
@@ -233,7 +247,7 @@ p {
     display: flex;
     justify-content: center;
     background-color: rgb(199, 218, 218);
-    height: 100vh;
+    height:700px;
     margin-top: 20px;
 }
 
@@ -253,6 +267,14 @@ p {
     color: white;
 }
 
+.top{
+    display: flex;
+    justify-content: end;
+    
+}
+.top-right{
+ padding-top: 20px;
+}
 .running-right>.top {
     display: flex;
 }
@@ -262,7 +284,7 @@ p {
 }
 
 .running-right>.top>.top-right {
-    background: #0000009d;
+    background:black;
     align-items: end;
     height: 8vh;
     width: 30%;
@@ -280,6 +302,11 @@ p {
 
 .contant>h1>span {
     color: black;
+    font-style: italic;
+}
+
+.contant h1{
+    font-style: italic;
 }
 
 .contant-card {
@@ -331,7 +358,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 0px 0px 0px 20px;
+    border-radius: 0px 0px 0px 10px;
 
 }
 
@@ -410,9 +437,9 @@ p {
 .volleyball h1 {
     background-color: rgb(0, 0, 0);
     color: white;
-    width: 15%;
-    padding: 10px;
-    border-radius: 0 0 20px 0;
+    width:150px;
+    padding: 15px 40px;
+    border-radius: 0 0 10px 0;
 }
 
 .volleyball-oficons {
@@ -468,14 +495,15 @@ p {
 }
 
 .Tennis-top>h1 {
-    background: #0000009f;
+    background:black;
     height: 50px;
     color: white;
     display: flex;
     justify-content: center;
     text-align: center;
-    width: 30vh;
+    width:150px ;
     border-radius: 0px 0px 10px 0px;
+    padding-top: 10px;
 }
 
 .Tennis-center>p {
@@ -486,6 +514,12 @@ p {
     width: 90%;
 }
 
+.tennis-icon1 p{
+    font-size: 20px;
+    width: 300px;
+    text-align: center;
+
+}
 
 .Tennis-center {
     height: 25vh;
@@ -516,8 +550,7 @@ p {
     display: flex;
     justify-content: center;
     background-color: rgb(189, 201, 201);
-    width: 15%;
-    height: 8vh;
+    padding: 10px;
     border-radius: 80%;
     align-items: center;
 }
@@ -535,7 +568,7 @@ p {
     margin-top: 20px;
 }
 .sport-Basketball>h1 {
-    background-color: rgba(0, 0, 0, 0.527);
+    background-color:black;
     width: 15%;
     height: 9vh;
     border-radius: 0 0 10px 0;
@@ -592,9 +625,10 @@ p {
     background-color: black;
     color: white;
     width: 15%;
-    height: 60px;
+    height: 50px;
     text-align: center;
     border-radius: 0 0 20px 0;
+    padding-top: 10px;
 }
 
 .swimming>p {
@@ -646,3 +680,140 @@ p {
     margin-right:  10px;
 
 } 
+
+//< ..cha..>
+.contact-us {
+    background-image: url(/image/Contact\ us.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+form {
+    background: rgba(3, 2, 0, 0.483);
+    height: 500px;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.contain-left {
+    height: 500px;
+    width: 550px;
+}
+
+.booking h2 {
+    color: orange;
+}
+
+.us-h1 {
+    font-size: 35px;
+    width: 400px;
+    color: orange;
+    padding: 40px 40px 0px 20px;
+}
+
+.us-pra p {
+    font-size: 30px;
+    width: 450px;
+    color: rgba(255, 166, 0, 0.742);
+    padding: 40px 40px 0px 20px;
+
+
+}
+
+.contain-right {
+    height: 500px;
+    width: 550px;
+    border-left: 2px solid black;
+}
+
+.booking {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0px 20px 0px;
+}
+
+.user-name {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 10px;
+}
+
+.user-name input,
+.user-email input,
+.phone-number input,
+.select1,
+.select2,
+.select3 {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: rgb(185, 177, 177);
+    border: 1px solid white;
+    background: none;
+}
+
+.user-email input,
+.phone-number input {
+    width: 84%;
+}
+
+.user-email,
+.phone-number {
+    padding: 15px 0px 0px 30px;
+}
+
+.firs-name ion-icon,
+.user-email ion-icon,
+.phone-number ion-icon {
+    color: orange;
+    font-size: 25px;
+}
+
+.sport-type,
+.time-start,
+.time-end {
+    padding: 15px 0px 0px 60px;
+}
+
+.select1,
+.select2,
+.select3 {
+    width: 95%;
+}
+
+::placeholder {
+    color: orange;
+}
+
+.select1,
+.select2,
+.select3 {
+    color: orange;
+}
+
+.user-button {
+    padding: 15px 0px 0px 60px;
+}
+
+.user-button button {
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    border: 2px solid white;
+    background: none;
+    color: white;
+}
+
+.user-button :hover {
+    background: orange;
+    color: white;
+}
