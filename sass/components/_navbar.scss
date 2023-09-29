@@ -1,5 +1,6 @@
 @import "./varaible";
 @import "../mixins/group-mixin";
+
 nav {
     width: 100%;
     height: 70px;
@@ -9,19 +10,21 @@ nav {
     .navbar-left {
         width: 50%;
         background: $orangelight-color;
-    
+
 
         .user-img {
             padding: 10px 0px 0px $valuetwety ;
         }
     }
-   @include responsive ('tablet'){
-        .navbar-left{
+
+    @include responsive ('tablet') {
+        .navbar-left {
             width: 30%;
         }
     }
+
     .navbar-right {
-        width: 50%;
+        width: 70%;
         background: $orangelight-color;
 
         ul {
@@ -36,11 +39,11 @@ nav {
 
                 a {
                     display: block;
-                    padding:$valuetwety;
-                    color:$white-color;
+                    padding: $valuetwety;
+                    color: $white-color;
                     text-decoration: none;
                     text-align: center;
-                    font-size:$valuetwety;
+                    font-size: $valuetwety;
                 }
 
                 .dropdown1 li {
@@ -49,7 +52,7 @@ nav {
 
                 .dropdown {
                     width: 200%;
-                    background:$orange-color;
+                    background: $orange-color;
                     position: absolute;
                     z-index: 999;
                     display: none;
@@ -59,8 +62,9 @@ nav {
 
         }
     }
-    @include responsive ('tablet'){
-        .navbar-right{
+
+    @include responsive ('tablet') {
+        .navbar-right {
             width: 70%;
         }
     }
@@ -68,13 +72,13 @@ nav {
 
 
 ul li a:hover {
-    background:$orange-color;
+    background: $orange-color;
 
 }
 
 ul li:hover ul.dropdown {
     display: block;
-    background-color:$blacklight-color;
+    background-color: $blacklight-color;
 }
 
 
@@ -91,8 +95,8 @@ ul li:hover ul.dropdown {
 }
 
 .bg-img {
-    color:$white-color;
-    background:$whitelight-color ;
+    color: $white-color;
+    background: $whitelight-color ;
     backdrop-filter: 1px;
     width: 700px;
     height: 400px;
@@ -101,25 +105,55 @@ ul li:hover ul.dropdown {
     h1 {
         font-style: italic;
         font-size: 60px;
-        padding:$valuetwety;
-        color:$orange-color;
+        padding: $valuetwety;
+        color: $orange-color;
+    }
+
+    @include responsive ('tablet') {
+        h1 {
+            padding: 0px 3px 0px 20px;
+        }
     }
 
     .user-quote {
         width: 350px;
 
         p {
-            font-size:$valuetwety;
-            padding:$valuetwety;
+            font-size: $valuetwety;
+            padding: $valuetwety;
             font-style: italic;
+        }
+
+        @include responsive ('tablet') {
+            p {
+                padding: 10px 0px 0px 20px;
+            }
         }
     }
 
-    .user-time p,.user-info p {
-        font-size:$valuetwety;
-        padding:$valuetwety;
+    .user-time p,
+    .user-info p {
+        font-size: $valuetwety;
+        padding: $valuetwety;
     }
 
+    @include responsive ('tablet') {
+
+        .user-time p,
+        .user-info p {
+            padding: 15px 0px 0px 20px;
+            width: 500px;
+        }
+    }
+
+}
+
+@include responsive ('tablet') {
+    .bg-img {
+        background: $whitelight-color ;
+        width: 600px;
+        height: 300px;
+    }
 }
 
 // Channy
@@ -129,25 +163,26 @@ ul li:hover ul.dropdown {
     background-repeat: no-repeat;
     width: 100%;
     height: 700px;
-    margin-top:$valuetwety;
+    margin-top: $valuetwety;
 
     h1 {
         background-color: $black-color;
-        color:$white-color;
+        color: $white-color;
         width: 15%;
         font-size: 40px;
         padding: 10px;
         border-radius: 0 0 $valuetwety 0;
     }
-    @include responsive ('tablet'){
-        h1{
+
+    @include responsive ('tablet') {
+        h1 {
             width: 20%;
             font-size: 30px;
         }
     }
 
     .about {
-        background-color:$blacklight-color;
+        background-color: $blacklight-color;
         width: 600px;
         height: 350px;
         margin: 100px 0 0 0;
@@ -155,23 +190,24 @@ ul li:hover ul.dropdown {
 
         .mission,
         .vision {
-            color:$white-color;
+            color: $white-color;
             padding: 40px 25px 0 40px;
 
             p {
                 padding: 5px;
-                font-size:$valuetwety;
+                font-size: $valuetwety;
 
                 span {
-                    color:$orange-color;
+                    color: $orange-color;
                 }
             }
         }
     }
 }
-@include responsive ('tablet'){
+
+@include responsive ('tablet') {
     #about-us {
-        background-position:right;
+        background-position: right;
     }
 }
 
@@ -181,11 +217,17 @@ ul li:hover ul.dropdown {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    margin-top:$valuetwety;
+    margin-top: $valuetwety;
 
     .user-video h2 {
         font-size: 30px;
-        color:$orange-color;
+        color: $orange-color;
+    }
+
+    @include responsive ('tablet') {
+        .user-video h2 {
+            text-transform: uppercase;
+        }
     }
 
     p {
@@ -217,6 +259,14 @@ ul li:hover ul.dropdown {
             width: 230px;
             border-radius: 0px 0px 20px 0px;
         }
+
+        @include responsive ('tablet') {
+            h1 {
+                font-size: 25px;
+                width: 200px;
+                height: 60px;
+            }
+        }
     }
 
     .image {
@@ -245,11 +295,13 @@ ul li:hover ul.dropdown {
         background: rgba(226, 169, 11, 0.701);
         height: 140px;
     }
-    @include responsive ('tablet'){
-        .infor{
+
+    @include responsive ('tablet') {
+        .infor {
             height: 100px;
         }
     }
+
     .infor {
         display: flex;
         justify-content: center;
@@ -262,12 +314,13 @@ ul li:hover ul.dropdown {
             justify-content: center;
             width: 90%;
         }
-        @include responsive ('tablet'){
-            p{
-                font-size: 15px;
+
+        @include responsive ('tablet') {
+            p {
+                font-size: 20px;
             }
         }
-        
+
     }
 
     .man,
@@ -303,8 +356,9 @@ ul li:hover ul.dropdown {
     padding: 10px;
     border-radius: 0 0 10px 0;
 }
-@include responsive ('tablet'){
-    #yuga h1{
+
+@include responsive ('tablet') {
+    #yuga h1 {
         font-size: 25px;
     }
 }
@@ -328,8 +382,9 @@ p {
         padding: 10px;
         margin: 10px;
     }
-    @include responsive ('tablet'){
-        p{
+
+    @include responsive ('tablet') {
+        p {
             font-size: 20px;
         }
     }
@@ -340,6 +395,7 @@ p {
     display: flex;
     justify-content: center;
 }
+
 .yoga1,
 .yoga2,
 .yoga3,
@@ -400,11 +456,15 @@ p {
     text-align: center;
     border-radius: 0px 0px 0px 10px;
 }
-@include responsive ('tablet'){
-    .running-right .top .top-right{
+
+@include responsive ('tablet') {
+    .running-right .top .top-right {
         font-size: 20px;
-        height: 5vh;
+        height: 12vh;
         width: 40%;
+        padding-top: 15px;
+
+
     }
 }
 
@@ -424,11 +484,13 @@ p {
 .contant h1 {
     font-style: italic;
 }
-@include responsive ('tablet'){
-    .running-right{
+
+@include responsive ('tablet') {
+    .running-right {
         font-size: 20px;
     }
 }
+
 .contant-card {
     display: flex;
     flex-direction: row;
@@ -456,7 +518,7 @@ p {
     color: black;
 }
 
-// <.cha..>
+// // <.cha..>
 #battle-ropes {
     background-color: rgba(225, 165, 55, 0.804);
     height: 650px;
@@ -482,6 +544,14 @@ p {
 
 }
 
+@include responsive ('tablet') {
+    .battle {
+        font-size: 13px;
+        width: 200px;
+        height: 60px;
+    }
+}
+
 .spt-battle2 {
     height: 400px;
     display: flex;
@@ -496,22 +566,29 @@ p {
     width: 50%;
     gap: 20px;
 }
-@include responsive ('tablet'){
+
+@include responsive ('tablet') {
     .user-box {
         width: 40%;
-        gap:1px;
+        gap: 20px;
     }
-    
+
 }
 
 .box {
     width: 80%;
-    height: 350px;
+    height: 320px;
 
 }
 
 .picture {
     height: 280px;
+}
+
+@include responsive ('tablet') {
+    .picture {
+        height: 240px;
+    }
 }
 
 .para1 {
@@ -524,6 +601,12 @@ p {
     border-radius: 0px 0px 10px 10px;
 }
 
+@include responsive ('tablet') {
+    .para1 {
+        padding-top: 20px;
+    }
+}
+
 .para1 .material-icons {
     font-size: 50px;
 }
@@ -532,10 +615,30 @@ p {
     color: #000;
 }
 
+@include responsive ('tablet') {
+    .para1 p {
+        font-size: 20px;
+    }
+}
+
 .picture img {
     width: 318px;
     height: 300px;
     border-radius: 10px 10px 0px 0px;
+}
+
+@include responsive ('tablet') {
+    .picture img {
+        width: 220px;
+        height: 250px;
+    }
+}
+
+@include responsive ('tablet') {
+    .para1 .material-icons {
+        color: orange;
+        font-size: 35px;
+    }
 }
 
 .spt-battle3 {
@@ -547,15 +650,15 @@ p {
     align-items: center;
 
 }
-@include responsive ('tablet'){
-    .spt-battle3{
-        font-size: 25px;
-    }
-}
 
 .battle3 {
-    display: flex;
     width: 90%;
+}
+
+@include responsive ('tablet') {
+    .battle3 p {
+        font-size: 20px;
+    }
 }
 
 // channy
@@ -572,6 +675,22 @@ p {
     width: 150px;
     padding: 15px 40px;
     border-radius: 0 0 10px 0;
+}
+
+@include responsive ('tablet') {
+    #volleyball h1 {
+        width: 100px;
+        font-size: 25px;
+    }
+}
+
+@include responsive ('tablet') {
+
+    .card1 h2,
+    .card2 h2,
+    .card3 h2 {
+        font-size: 20px;
+    }
 }
 
 .volleyball-oficons {
@@ -600,7 +719,7 @@ p {
 .volleyball1,
 .volleyball2,
 .volleyball3 {
-    width: 300px;
+    width: 200px;
     margin-top: 20px;
 }
 
@@ -613,12 +732,39 @@ p {
     color: #000;
 }
 
+@include responsive ('tablet') {
+
+    .card1 p,
+    .card2 p,
+    .card3 p {
+        font-size: 20px;
+        padding: 20px;
+    }
+}
+
 // kadin.........
 #sport-Tennis {
     background-color: rgba(225, 165, 55, 0.804);
-    height:700px;
+    width: 100%;
+    height: 700px;
     margin-top: 20px;
 
+}
+
+@include responsive ('tablet') {
+    #sport-Tennis {
+        height: 400px;
+    }
+}
+
+.sport-img img {
+    width: 300px;
+}
+
+@include responsive ('tablet') {
+    .sport-img img {
+        width: 200px;
+    }
 }
 
 .Tennis-top {
@@ -644,6 +790,12 @@ p {
     display: flex;
     justify-content: center;
     width: 90%;
+}
+
+@include responsive ('tablet') {
+    .Tennis-center p {
+        font-size: 15px;
+    }
 }
 
 .tennis-icon1 p {
@@ -676,6 +828,18 @@ p {
     justify-content: space-evenly;
     padding: 15px;
 
+}
+
+@include responsive ('tablet') {
+
+    // .tennis-icon1 {
+    //     display: flex;
+    //     justify-content: space-evenly;
+    //     padding: 10px;
+    // }
+    .tennis-footer {
+        display: none;
+    }
 }
 
 .tennis-icon1>span {
@@ -713,9 +877,23 @@ p {
     align-items: center;
 }
 
+@include responsive ('tablet') {
+    #sport-Basketball>h1 {
+        width: 20%;
+        height: 15vh;
+        font-size: 25px;
+    }
+}
+
 #sport-Basketball h1,
 p {
     color: white;
+}
+
+@include responsive ('tablet') {
+    #sport-Basketball p {
+        font-size: 20px;
+    }
 }
 
 .Basketball-top {
@@ -770,11 +948,24 @@ p {
     padding-top: 10px;
 }
 
+@include responsive ('tablet') {
+    #swimming h1 {
+        width: 25%;
+        font-size: 25px;
+    }
+}
+
 #swimming p {
     color: #000;
     font-size: 30px;
     text-align: center;
     padding: 30px;
+}
+
+@include responsive ('tablet') {
+    #swimming p {
+        font-size: 20px;
+    }
 }
 
 .photo-swim {
@@ -798,6 +989,15 @@ p {
     border-radius: 20px 20px 0 0;
 }
 
+@include responsive ('tablet') {
+
+    .swimming1,
+    .swimming2,
+    .swimming3 {
+        width: 200px;
+    }
+}
+
 .benefit {
     background-color: rgba(176, 138, 51, 0.693);
     width: 300px;
@@ -806,9 +1006,16 @@ p {
     border-radius: 0 0 20px 20px;
 }
 
+@include responsive ('tablet') {
+    .benefit {
+        width: 200px;
+        height: 100px;
+    }
+}
+
 .benefit p {
     font-size: 20px;
-    padding: 30px;
+    padding: 20px;
 }
 
 .benefit .material-icons {
@@ -822,12 +1029,18 @@ p {
 
 }
 
+@include responsive ('tablet') {
+    .benefit .material-icons {
+        display: none;
+    }
+}
+
 //< ..cha..>
 #contact-us {
     background-image: url(/image/Contact\ us.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height:700px;
+    height: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -844,9 +1057,21 @@ form {
     border-radius: 20px;
 }
 
+@include responsive ('tablet') {
+    form {
+        width: 700px;
+    }
+}
+
 .contain-left {
     height: 500px;
     width: 550px;
+}
+
+@include responsive ('tablet') {
+    .contain-left {
+        width: 350px;
+    }
 }
 
 .booking h2 {
@@ -860,13 +1085,25 @@ form {
     padding: 40px 40px 0px 20px;
 }
 
+@include responsive ('tablet') {
+    .us-h1 {
+        font-size: 30px;
+        width: 300px;
+    }
+}
+
 .us-pra p {
     font-size: 30px;
     width: 450px;
     color: rgba(255, 166, 0, 0.742);
     padding: 40px 40px 0px 20px;
+}
 
-
+@include responsive ('tablet') {
+    .us-pra p {
+        font-size: 20px;
+        width: 300px;
+    }
 }
 
 .contain-right {
@@ -892,7 +1129,7 @@ form {
 .select1,
 .select2,
 .select3 {
-    width: 170px;
+    width: 165px;
     padding: 10px;
     border-radius: 5px;
     border: none;
@@ -901,9 +1138,31 @@ form {
     background: none;
 }
 
+@include responsive ('tablet') {
+
+    .user-name input,
+    .user-email input,
+    .phone-number input,
+    .select1,
+    .select2,
+    .select3 {
+        width: 100px;
+        padding: 10px;
+    }
+}
+
 .user-email input,
 .phone-number input {
     width: 80%;
+}
+
+@include responsive ('tablet') {
+
+    .user-email input,
+    .phone-number input {
+        width: 70%;
+        padding-left: 23px;
+    }
 }
 
 .user-email,
@@ -992,6 +1251,15 @@ footer .card3 p {
     padding: 15px;
 }
 
+@include responsive ('tablet') {
+
+    footer .card1 p,
+    footer .card2 p,
+    footer .card3 p {
+        font-size: 18px;
+    }
+}
+
 .tik,
 .face,
 .tele,
@@ -1009,6 +1277,17 @@ footer .card3 p {
 .you-tube {
     font-size: 20px;
     color: rgb(13, 13, 160);
+}
+
+@include responsive ('tablet') {
+
+    .tik-tok,
+    .facebook,
+    .telegram,
+    .instagram,
+    .you-tube {
+        font-size: 18px;
+    }
 }
 
 ion-icon {
@@ -1039,13 +1318,24 @@ ion-icon {
     margin: 20px 0;
 }
 
+@include responsive ('tablet') {
+    .map iframe {
+        width: 200px;
+    }
+}
+
 .address {
     color: black;
     padding: 10px;
+}
+
+@include responsive ('tablet') {
+    .address {
+        font-size: 12px;
+    }
 }
 
 
 .address span {
     color: rgb(11, 33, 143);
 }
-
