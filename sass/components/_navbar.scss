@@ -1,5 +1,6 @@
 @import "./varaible";
 @import "../mixins/group-mixin";
+@import "../mixins/responsive";
 
 nav {
     width: 100%;
@@ -19,7 +20,14 @@ nav {
 
     @include responsive ('tablet') {
         .navbar-left {
-            width: 30%;
+            width: 15%;
+        }
+    }
+
+    @include responsive ('mobile') {
+        .navbar-left {
+            width: 20%;
+
         }
     }
 
@@ -46,6 +54,18 @@ nav {
                     font-size: $valuetwety;
                 }
 
+                @include responsive ('tablet') {
+                    a {
+                        font-size: 15px;
+                    }
+                }
+
+                @include responsive ('mobile') {
+                    a {
+                        font-size: 15px;
+                    }
+                }
+
                 .dropdown1 li {
                     display: block;
                 }
@@ -65,7 +85,13 @@ nav {
 
     @include responsive ('tablet') {
         .navbar-right {
-            width: 70%;
+            width: 85%;
+        }
+    }
+
+    @include responsive ('mobile') {
+        .navbar-right {
+            width: 80%;
         }
     }
 }
@@ -90,11 +116,15 @@ ul li:hover ul.dropdown {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
+    background-attachment: fixed;
     display: flex;
     align-items: center;
+
 }
 
 .bg-img {
+
+
     color: $white-color;
     background: $whitelight-color ;
     backdrop-filter: 1px;
@@ -114,6 +144,7 @@ ul li:hover ul.dropdown {
             padding: 0px 3px 0px 20px;
         }
     }
+
 
     .user-quote {
         width: 350px;
@@ -142,7 +173,7 @@ ul li:hover ul.dropdown {
         .user-time p,
         .user-info p {
             padding: 15px 0px 0px 20px;
-            width: 500px;
+            width: 100%;
         }
     }
 
@@ -151,7 +182,7 @@ ul li:hover ul.dropdown {
 @include responsive ('tablet') {
     .bg-img {
         background: $whitelight-color ;
-        width: 600px;
+        width: 90%;
         height: 300px;
     }
 }
@@ -176,8 +207,10 @@ ul li:hover ul.dropdown {
 
     @include responsive ('tablet') {
         h1 {
-            width: 20%;
+            width: 30%;
             font-size: 30px;
+            text-align: center;
+            border-radius: 0 0 10px 0;
         }
     }
 
@@ -203,6 +236,12 @@ ul li:hover ul.dropdown {
             }
         }
     }
+
+    @include responsive ('tablet') {
+        .about {
+            width: 90%;
+        }
+    }
 }
 
 @include responsive ('tablet') {
@@ -222,17 +261,18 @@ ul li:hover ul.dropdown {
     .user-video h2 {
         font-size: 30px;
         color: $orange-color;
-    }
-
-    @include responsive ('tablet') {
-        .user-video h2 {
-            text-transform: uppercase;
-        }
+        text-transform: uppercase;
     }
 
     p {
         color: #000;
         font-size: 20px;
+    }
+
+    @include responsive ('tablet') {
+        p {
+            font-size: 15px;
+        }
     }
 }
 
@@ -282,13 +322,32 @@ ul li:hover ul.dropdown {
 
             .us-img1 img {
                 border-radius: 0px 0px 0px 10px;
+
+            }
+
+            @include responsive ('tablet') {
+                .us-img1 img {
+                    width: 100%;
+                }
             }
 
             .us-img2 img {
                 border-radius: 0px 0px 10px 0px;
             }
 
+            @include responsive ('tablet') {
+                .us-img2 img {
+                    width: 100%;
+                }
+            }
         }
+
+        @include responsive ('tablet') {
+            .card {
+                width: 40%;
+            }
+        }
+
     }
 
     .infor {
@@ -317,7 +376,8 @@ ul li:hover ul.dropdown {
 
         @include responsive ('tablet') {
             p {
-                font-size: 20px;
+                font-size: 17px;
+                text-align: justify;
             }
         }
 
@@ -335,6 +395,15 @@ ul li:hover ul.dropdown {
         border-radius: 0px 10px 0px 0px;
     }
 
+    @include responsive ('tablet') {
+
+        .man,
+        .woman {
+            width: 100%;
+            font-size: 20px;
+        }
+    }
+
     .man {
         border-radius: 20px 0px 0px 0px;
     }
@@ -350,6 +419,12 @@ ul li:hover ul.dropdown {
     margin-top: 20px;
 }
 
+@include responsive ('tablet') {
+    #yuga {
+        height: 600px;
+    }
+}
+
 #yuga h1 {
     background-color: black;
     width: 100px;
@@ -359,7 +434,8 @@ ul li:hover ul.dropdown {
 
 @include responsive ('tablet') {
     #yuga h1 {
-        font-size: 25px;
+        font-size: 20px;
+        width: 10%;
     }
 }
 
@@ -385,7 +461,7 @@ p {
 
     @include responsive ('tablet') {
         p {
-            font-size: 20px;
+            font-size: 15px;
         }
     }
 }
@@ -405,6 +481,17 @@ p {
     margin: 10px;
 }
 
+@include responsive ('tablet') {
+
+    .yoga1,
+    .yoga2,
+    .yoga3,
+    .yoga4 {
+        width: 200px;
+        height: 150px;
+    }
+}
+
 // kadin
 #running {
     display: flex;
@@ -412,6 +499,12 @@ p {
     background-color: rgb(199, 218, 218);
     height: 700px;
     margin-top: 20px;
+}
+
+@include responsive ('tablet') {
+    #running {
+        height: 600px;
+    }
 }
 
 .running-left {
@@ -460,11 +553,9 @@ p {
 @include responsive ('tablet') {
     .running-right .top .top-right {
         font-size: 20px;
-        height: 12vh;
-        width: 40%;
+        height: 40px;
+        width: 50%;
         padding-top: 15px;
-
-
     }
 }
 
@@ -487,7 +578,9 @@ p {
 
 @include responsive ('tablet') {
     .running-right {
-        font-size: 20px;
+        font-size: 15px;
+        text-align: justify;
+
     }
 }
 
@@ -525,6 +618,12 @@ p {
     margin-top: 20px;
 }
 
+@include responsive ('mobile') {
+    #battle-ropes {
+        height: 550px;
+    }
+}
+
 .spt-battle1 {
     width: 100%;
     height: 100px;
@@ -546,9 +645,17 @@ p {
 
 @include responsive ('tablet') {
     .battle {
-        font-size: 13px;
-        width: 200px;
-        height: 60px;
+        font-size: 12px;
+        width: 25%;
+        height: 45px;
+    }
+}
+
+@include responsive ('mobile') {
+    .battle {
+        font-size: 12px;
+        width: 150px;
+        height: 50px;
     }
 }
 
@@ -560,6 +667,20 @@ p {
     padding-bottom: 30px;
 }
 
+@include responsive ('tablet') {
+    .spt-battle2 {
+        height: 300px;
+    }
+}
+
+@include responsive ('mobile') {
+    .spt-battle2 {
+        height: 280px;
+        padding-bottom: 5px;
+
+    }
+}
+
 .user-box {
     display: flex;
     justify-content: center;
@@ -569,7 +690,7 @@ p {
 
 @include responsive ('tablet') {
     .user-box {
-        width: 40%;
+        width: 90%;
         gap: 20px;
     }
 
@@ -581,13 +702,32 @@ p {
 
 }
 
+@include responsive ('tablet') {
+    .box {
+        height: 290px;
+    }
+}
+
+@include responsive ('mobile') {
+    .box {
+        height: 250px;
+    }
+}
+
 .picture {
     height: 280px;
 }
 
 @include responsive ('tablet') {
     .picture {
-        height: 240px;
+        height: 200px;
+
+    }
+}
+
+@include responsive ('mobile') {
+    .picture {
+        height: 200px;
     }
 }
 
@@ -603,8 +743,18 @@ p {
 
 @include responsive ('tablet') {
     .para1 {
+        height: 50px;
         padding-top: 20px;
     }
+}
+
+@include responsive ('mobile') {
+    .para1 {
+        height: 40px;
+        padding: 5px;
+        font-size: 10px;
+    }
+
 }
 
 .para1 .material-icons {
@@ -617,7 +767,15 @@ p {
 
 @include responsive ('tablet') {
     .para1 p {
-        font-size: 20px;
+        font-size: 15px;
+    }
+}
+
+@include responsive ('mobile') {
+    .para1 p {
+        width: 100px;
+        font-size: 15px;
+        text-align: center;
     }
 }
 
@@ -629,15 +787,22 @@ p {
 
 @include responsive ('tablet') {
     .picture img {
-        width: 220px;
-        height: 250px;
+        width: 100%;
+        height: 200px;
+    }
+}
+
+@include responsive ('mobile') {
+    .picture img {
+        width: 160px;
+        height: 200px;
     }
 }
 
 @include responsive ('tablet') {
     .para1 .material-icons {
         color: orange;
-        font-size: 35px;
+        font-size: 30px;
     }
 }
 
@@ -651,6 +816,13 @@ p {
 
 }
 
+@include responsive ('mobile') {
+    .spt-battle3 {
+        height: 70px;
+        align-items: start;
+    }
+}
+
 .battle3 {
     width: 90%;
 }
@@ -658,8 +830,17 @@ p {
 @include responsive ('tablet') {
     .battle3 p {
         font-size: 20px;
+        text-align: justify
     }
 }
+
+@include responsive ('mobile') {
+    .battle3 p {
+        font-size: 20px;
+        text-align: justify;
+    }
+}
+
 
 // channy
 #volleyball {
@@ -667,6 +848,19 @@ p {
     width: 100%;
     height: 600px;
     margin-top: 20px;
+}
+
+@include responsive ('tablet') {
+    #volleyball {
+        height: 450px;
+    }
+}
+
+@include responsive ('mobile') {
+    #volleyball {
+        height: 400px;
+    }
+
 }
 
 #volleyball h1 {
@@ -679,8 +873,17 @@ p {
 
 @include responsive ('tablet') {
     #volleyball h1 {
-        width: 100px;
-        font-size: 25px;
+        width: 80px;
+        height: 25px;
+        font-size: 22px;
+        text-align: center;
+    }
+}
+
+@include responsive ('mobile') {
+    #volleyball h1 {
+        width: 80px;
+        font-size: 20px;
     }
 }
 
@@ -689,7 +892,16 @@ p {
     .card1 h2,
     .card2 h2,
     .card3 h2 {
-        font-size: 20px;
+        font-size: 17px;
+    }
+}
+
+@include responsive ('mobile') {
+
+    .card1 h2,
+    .card2 h2,
+    .card3 h2 {
+        font-size: 15px;
     }
 }
 
@@ -716,11 +928,39 @@ p {
     color: white;
 }
 
+@include responsive ('mobile') {
+
+    .card1 .material-icons,
+    .card2 .material-icons,
+    .card3 .material-icons {
+        font-size: 200%;
+    }
+}
+
 .volleyball1,
 .volleyball2,
 .volleyball3 {
     width: 200px;
     margin-top: 20px;
+}
+
+@include responsive ('tablet') {
+
+    .volleyball1,
+    .volleyball2,
+    .volleyball3 {
+        width: 150px;
+    }
+}
+
+@include responsive ('mobile') {
+
+    .volleyball1,
+    .volleyball2,
+    .volleyball3 {
+        width: 150px;
+
+    }
 }
 
 .card1 p,
@@ -737,8 +977,19 @@ p {
     .card1 p,
     .card2 p,
     .card3 p {
-        font-size: 20px;
-        padding: 20px;
+        font-size: 18px;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+@include responsive ('mobile') {
+
+    .card1 p,
+    .card2 p,
+    .card3 p {
+        font-size: 15px;
+        padding: 10px;
     }
 }
 
@@ -753,7 +1004,13 @@ p {
 
 @include responsive ('tablet') {
     #sport-Tennis {
-        height: 400px;
+        height: 550px;
+    }
+}
+
+@include responsive ('mobile') {
+    #sport-Tennis {
+        height: 500px;
     }
 }
 
@@ -763,7 +1020,22 @@ p {
 
 @include responsive ('tablet') {
     .sport-img img {
-        width: 200px;
+        width: 25%;
+    }
+}
+
+@include responsive ('mobile') {
+    .sport-img img {
+        width: 400px;
+        height: 300px;
+    }
+
+    .sport-img img:nth-child(2) {
+        display: none;
+    }
+
+    .sport-img img:nth-child(3) {
+        display: none;
     }
 }
 
@@ -784,6 +1056,22 @@ p {
     padding-top: 10px;
 }
 
+@include responsive ('tablet') {
+    .Tennis-top h1 {
+        width: 100px;
+        height: 35px;
+        font-size: 23px;
+    }
+}
+
+@include responsive ('mobile') {
+    .Tennis-top h1 {
+        width: 100px;
+        height: 30px;
+        font-size: 20px;
+    }
+}
+
 .Tennis-center p {
     font-size: 25px;
     color: black;
@@ -795,6 +1083,13 @@ p {
 @include responsive ('tablet') {
     .Tennis-center p {
         font-size: 15px;
+        text-align: justify;
+    }
+}
+
+@include responsive ('mobile') {
+    .Tennis-center p {
+        text-align: justify;
     }
 }
 
@@ -813,7 +1108,6 @@ p {
 }
 
 .sport-image {
-
     display: flex;
     justify-content: center;
 }
@@ -821,6 +1115,13 @@ p {
 .sport-img {
     display: flex;
     gap: 60px;
+}
+
+@include responsive ('tablet') {
+    .sport-img {
+        justify-content: center;
+        gap: 35px;
+    }
 }
 
 .tennis-footer {
@@ -831,16 +1132,23 @@ p {
 }
 
 @include responsive ('tablet') {
-
-    // .tennis-icon1 {
-    //     display: flex;
-    //     justify-content: space-evenly;
-    //     padding: 10px;
-    // }
     .tennis-footer {
         display: none;
     }
 }
+
+@include responsive ('mobile') {
+    .tennis-icon1 {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px;
+    }
+
+    .tennis-footer {
+        display: none;
+    }
+}
+
 
 .tennis-icon1>span {
     display: flex;
@@ -867,6 +1175,18 @@ p {
     margin-top: 20px;
 }
 
+@include responsive ('tablet') {
+    #sport-Basketball {
+        height: 650px;
+    }
+}
+
+@include responsive ('mobile') {
+    #sport-Basketball {
+        height: 600px;
+    }
+}
+
 #sport-Basketball>h1 {
     background-color: black;
     width: 15%;
@@ -880,8 +1200,16 @@ p {
 @include responsive ('tablet') {
     #sport-Basketball>h1 {
         width: 20%;
-        height: 15vh;
-        font-size: 25px;
+        height: 45px;
+        font-size: 20px;
+    }
+}
+
+@include responsive ('mobile') {
+    #sport-Basketball>h1 {
+        width: 20%;
+        height: 8vh;
+        font-size: 20px;
     }
 }
 
@@ -893,6 +1221,13 @@ p {
 @include responsive ('tablet') {
     #sport-Basketball p {
         font-size: 20px;
+    }
+}
+
+@include responsive ('mobile') {
+    #sport-Basketball p {
+        font-size: 15px;
+        text-align: justify;
     }
 }
 
@@ -913,10 +1248,22 @@ p {
     text-align: justify;
 }
 
+@include responsive ('mobile') {
+    .Basketball-top p {
+        padding-bottom: 30px;
+    }
+}
+
 .Basketball-first,
 .Basketball-last {
     display: flex;
     justify-content: center;
+}
+
+@include responsive ('tablet') {
+    .Basketball-first {
+        margin-top: 30px;
+    }
 }
 
 .basketball1,
@@ -930,6 +1277,30 @@ p {
 
 }
 
+@include responsive ('tablet') {
+
+    .basketball1,
+    .basketball2,
+    .basketball3,
+    .basketball4 {
+        width: 250px;
+        height: 200px;
+    }
+}
+
+@include responsive ('mobile') {
+
+    .basketball1,
+    .basketball2,
+    .basketball3,
+    .basketball4 {
+        width: 250px;
+        height: 200px;
+
+
+    }
+}
+
 // channy
 #swimming {
     background-color: rgba(225, 165, 55, 0.804);
@@ -938,20 +1309,42 @@ p {
     margin-top: 20px;
 }
 
+@include responsive ('tablet') {
+    #swimming {
+        height: 450px;
+    }
+}
+
+@include responsive ('mobile') {
+    #swimming {
+        height: 600px;
+    }
+}
+
 #swimming h1 {
     background-color: black;
     color: rgb(255, 255, 255);
     width: 15%;
     height: 50px;
     text-align: center;
-    border-radius: 0 0 20px 0;
+    border-radius: 0 0 15px 0;
     padding-top: 10px;
 }
 
 @include responsive ('tablet') {
     #swimming h1 {
+        width: 20%;
+        height: 40px;
+        font-size: 20px;
+    }
+}
+
+@include responsive ('mobile') {
+    #swimming h1 {
         width: 25%;
-        font-size: 25px;
+        height: 40px;
+        font-size: 20px;
+
     }
 }
 
@@ -965,12 +1358,35 @@ p {
 @include responsive ('tablet') {
     #swimming p {
         font-size: 20px;
+        text-align: justify;
+        padding-top: 10px;
+    }
+}
+
+@include responsive ('mobile') {
+    #swimming p {
+        font-size: 20px;
+        text-align: justify;
     }
 }
 
 .photo-swim {
     display: flex;
     justify-content: space-evenly;
+}
+
+@include responsive ('tablet') {
+    .photo-swim {
+        margin-right: 30px;
+
+
+    }
+}
+
+@include responsive ('mobile') {
+    .photo-swim {
+        justify-content: start;
+    }
 }
 
 .photo-swim .card1,
@@ -994,7 +1410,21 @@ p {
     .swimming1,
     .swimming2,
     .swimming3 {
-        width: 200px;
+        width: 130%;
+        height: 150px;
+    }
+}
+
+@include responsive ('mobile') {
+    .swimming1 {
+        width: 600px;
+        height: 350px;
+        border-radius: 0px;
+    }
+
+    .swimming2,
+    .swimming3 {
+        display: none;
     }
 }
 
@@ -1008,8 +1438,14 @@ p {
 
 @include responsive ('tablet') {
     .benefit {
-        width: 200px;
-        height: 100px;
+        width: 130%;
+        height: 70px;
+    }
+}
+
+@include responsive ('mobile') {
+    .benefit:nth-child(2) {
+        display: none;
     }
 }
 
@@ -1059,7 +1495,14 @@ form {
 
 @include responsive ('tablet') {
     form {
-        width: 700px;
+        width: 90%;
+    }
+}
+
+@include responsive ('mobile') {
+    form {
+        width: 500px;
+
     }
 }
 
@@ -1070,7 +1513,13 @@ form {
 
 @include responsive ('tablet') {
     .contain-left {
-        width: 350px;
+        width: 45%;
+    }
+}
+
+@include responsive ('mobile') {
+    .contain-left {
+        width: 250px;
     }
 }
 
@@ -1087,8 +1536,15 @@ form {
 
 @include responsive ('tablet') {
     .us-h1 {
-        font-size: 30px;
-        width: 300px;
+        font-size: 20px;
+        width: 90%;
+    }
+}
+
+@include responsive ('mobile') {
+    .us-h1 {
+        font-size: 20px;
+        width: 200px;
     }
 }
 
@@ -1102,7 +1558,15 @@ form {
 @include responsive ('tablet') {
     .us-pra p {
         font-size: 20px;
-        width: 300px;
+        width: 90%;
+
+    }
+}
+
+@include responsive ('mobile') {
+    .us-pra p {
+        font-size: 15px;
+        width: 200px;
     }
 }
 
@@ -1110,6 +1574,18 @@ form {
     height: 500px;
     width: 550px;
     border-left: 2px solid black;
+}
+
+@include responsive ('tablet') {
+    .contain-right {
+        width: 45%;
+    }
+}
+
+@include responsive ('mobile') {
+    .contain-right {
+        width: 250px;
+    }
 }
 
 .booking {
@@ -1121,6 +1597,12 @@ form {
 .user-name {
     display: flex;
     justify-content: space-evenly;
+}
+
+@include responsive ('tablet') {
+    .last-name input {
+        margin-top: 6px;
+    }
 }
 
 .user-name input,
@@ -1146,8 +1628,28 @@ form {
     .select1,
     .select2,
     .select3 {
-        width: 100px;
-        padding: 10px;
+        width: 50%;
+        padding: 6px;
+    }
+}
+
+@include responsive ('mobile') {
+
+    .user-name input,
+    .user-email input,
+    .phone-number input,
+    .select1,
+    .select2,
+    .select3 {
+        width: 70px;
+        padding: 8px;
+    }
+}
+
+@include responsive ('mobile') {
+    .last-name input {
+        padding-left: 30%;
+        margin-top: 5px;
     }
 }
 
@@ -1157,17 +1659,40 @@ form {
 }
 
 @include responsive ('tablet') {
+    .user-name {
+        padding-left: 9%;
+        width: 100%;
+    }
+}
+
+@include responsive ('tablet') {
 
     .user-email input,
     .phone-number input {
-        width: 70%;
-        padding-left: 23px;
+        width: 74%;
+    }
+}
+
+@include responsive ('mobile') {
+
+    .user-email input,
+    .phone-number input {
+        width: 60%;
+        padding-left: 25px;
     }
 }
 
 .user-email,
 .phone-number {
     padding: 15px 0px 0px 20px;
+}
+
+@include responsive ('mobile') {
+
+    .user-email,
+    .phone-number {
+        padding: 15px 0px 0px 13px;
+    }
 }
 
 .firs-name ion-icon,
@@ -1181,6 +1706,15 @@ form {
 .time-start,
 .time-end {
     padding: 15px 0px 0px 70px;
+}
+
+@include responsive ('mobile') {
+
+    .sport-type,
+    .time-start,
+    .time-end {
+        padding: 15px 0px 0px 60px;
+    }
 }
 
 .select1,
@@ -1203,6 +1737,12 @@ form {
     padding: 15px 0px 0px 70px;
 }
 
+@include responsive ('mobile') {
+    .user-button {
+        padding: 15px 0px 0px 60px;
+    }
+}
+
 .user-button button {
     padding: 10px;
     width: 100px;
@@ -1211,6 +1751,13 @@ form {
     border: 2px solid white;
     background: none;
     color: white;
+}
+
+@include responsive ('mobile') {
+    .user-button button {
+        padding: 5px;
+        width: 90px;
+    }
 }
 
 .user-button :hover {
@@ -1270,6 +1817,18 @@ footer .card3 p {
     padding: 15px;
 }
 
+@include responsive ('tablet') {
+
+    .tik,
+    .face,
+    .tele,
+    .insta,
+    .youtube {
+        padding: 13px;
+
+    }
+}
+
 .tik-tok,
 .facebook,
 .telegram,
@@ -1287,8 +1846,10 @@ footer .card3 p {
     .instagram,
     .you-tube {
         font-size: 18px;
+
     }
 }
+
 
 ion-icon {
     font-size: 25px;
@@ -1320,7 +1881,8 @@ ion-icon {
 
 @include responsive ('tablet') {
     .map iframe {
-        width: 200px;
+        width: 100%;
+        height: 50%;
     }
 }
 
@@ -1331,10 +1893,10 @@ ion-icon {
 
 @include responsive ('tablet') {
     .address {
-        font-size: 12px;
+        font-size: 10px;
+        text-align: center;
     }
 }
-
 
 .address span {
     color: rgb(11, 33, 143);
