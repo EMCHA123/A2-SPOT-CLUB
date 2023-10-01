@@ -16,9 +16,14 @@ nav .navbar-left .user-img {
     width: 15%;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   nav .navbar-left {
-    width: 20%;
+    width: 15%;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav .user-img img {
+    width: 100%;
   }
 }
 nav .navbar-right {
@@ -30,6 +35,11 @@ nav .navbar-right ul {
   list-style: none;
   background: #A5774E;
   justify-content: space-evenly;
+}
+@media screen and (max-width: 600px) {
+  nav .navbar-right ul {
+    background-color: #A5774E;
+  }
 }
 nav .navbar-right ul li {
   display: block;
@@ -48,9 +58,13 @@ nav .navbar-right ul li a {
     font-size: 15px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
+  nav .navbar-right ul li {
+    position: relative;
+    top: 30px;
+  }
   nav .navbar-right ul li a {
-    font-size: 15px;
+    font-size: 8px;
   }
 }
 nav .navbar-right ul li .dropdown1 li {
@@ -68,9 +82,9 @@ nav .navbar-right ul li .dropdown {
     width: 85%;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   nav .navbar-right {
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -95,6 +109,13 @@ ul li:hover ul.dropdown {
   align-items: center;
 }
 
+@media screen and (max-width: 600px) {
+  #header {
+    padding-top: 80px;
+    background-size: 200%;
+    height: 300px;
+  }
+}
 .bg-img {
   color: white;
   background: rgba(62, 28, 164, 0.433);
@@ -115,6 +136,12 @@ ul li:hover ul.dropdown {
     padding: 0px 3px 0px 20px;
   }
 }
+@media screen and (max-width: 600px) {
+  .bg-img h1 {
+    width: 80%;
+    font-size: 20px;
+  }
+}
 .bg-img .user-quote {
   width: 350px;
 }
@@ -126,6 +153,16 @@ ul li:hover ul.dropdown {
 @media screen and (max-width: 768px) {
   .bg-img .user-quote p {
     padding: 10px 0px 0px 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .bg-img .user-quote p {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .bg-img .user-quote {
+    width: 60%;
   }
 }
 .bg-img .user-time p,
@@ -140,12 +177,26 @@ ul li:hover ul.dropdown {
     width: 100%;
   }
 }
+@media screen and (max-width: 600px) {
+  .bg-img .user-time p,
+  .bg-img .user-info p {
+    font-size: 10px;
+    width: 80%;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .bg-img {
     background: rgba(62, 28, 164, 0.433);
     width: 90%;
     height: 300px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .bg-img {
+    width: 80%;
+    height: 40%;
+    padding-bottom: 50px;
   }
 }
 #about-us {
@@ -164,41 +215,79 @@ ul li:hover ul.dropdown {
   padding: 10px;
   border-radius: 0 0 20px 0;
 }
+
+@media screen and (max-width: 600px) {
+  #about-us {
+    background-size: 200%;
+    background-position: center;
+    height: 400px;
+  }
+}
 @media screen and (max-width: 768px) {
-  #about-us h1 {
+  h1 {
     width: 30%;
     font-size: 30px;
     text-align: center;
     border-radius: 0 0 10px 0;
   }
 }
-#about-us .about {
+@media screen and (max-width: 600px) {
+  #about-us h1 {
+    font-size: 15px;
+    width: 30%;
+    border-radius: 0 0 10px 0;
+  }
+}
+.about {
   background-color: rgba(0, 0, 0, 0.51);
   width: 600px;
   height: 350px;
   margin: 100px 0 0 0;
   border-radius: 0 20px 20px 0;
 }
-#about-us .about .mission,
-#about-us .about .vision {
+.about .mission,
+.about .vision {
   color: white;
   padding: 40px 25px 0 40px;
 }
-#about-us .about .mission p,
-#about-us .about .vision p {
+.about .mission p,
+.about .vision p {
   padding: 5px;
   font-size: 20px;
 }
-#about-us .about .mission p span,
-#about-us .about .vision p span {
+.about .mission p span,
+.about .vision p span {
   color: orange;
 }
-@media screen and (max-width: 768px) {
-  #about-us .about {
-    width: 90%;
+@media screen and (max-width: 600px) {
+  .about .mission p,
+  .about .vision p {
+    font-size: 10px;
+    padding: 1px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about .mission,
+  .about .vision {
+    color: white;
+    padding: 10px;
+  }
+  .about .mission h2,
+  .about .vision h2 {
+    font-size: 15px;
   }
 }
 
+@media screen and (max-width: 768px) {
+  .about {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about {
+    height: 200px;
+  }
+}
 @media screen and (max-width: 768px) {
   #about-us {
     background-position: right;
@@ -216,6 +305,11 @@ ul li:hover ul.dropdown {
   color: orange;
   text-transform: uppercase;
 }
+@media screen and (max-width: 600px) {
+  .video .user-video h2 {
+    font-size: 15px;
+  }
+}
 .video p {
   color: #000;
   font-size: 20px;
@@ -225,7 +319,20 @@ ul li:hover ul.dropdown {
     font-size: 15px;
   }
 }
+@media screen and (max-width: 600px) {
+  .video p {
+    font-size: 15px;
+    text-align: justify;
+    width: 90%;
+  }
+}
 
+@media screen and (max-width: 600px) {
+  .video {
+    height: 350px;
+    padding-bottom: 70px;
+  }
+}
 #gym-wieg {
   background-image: url(/image/backgroup-gym.jpg);
   background-size: cover;
@@ -255,6 +362,18 @@ ul li:hover ul.dropdown {
     height: 60px;
   }
 }
+@media screen and (max-width: 600px) {
+  #gym-wieg .wieg h1 {
+    font-size: 15px;
+    width: 500%;
+    height: 10%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #gym-wieg .wieg {
+    height: 10%;
+  }
+}
 #gym-wieg .image {
   height: 452px;
   display: flex;
@@ -275,33 +394,51 @@ ul li:hover ul.dropdown {
   }
 }
 #gym-wieg .image .card .us-img2 img {
+  width: 100%;
   border-radius: 0px 0px 10px 0px;
 }
-@media screen and (max-width: 768px) {
-  #gym-wieg .image .card .us-img2 img {
-    width: 100%;
+@media screen and (max-width: 600px) {
+  #gym-wieg .image .card {
+    height: 50%;
   }
 }
 @media screen and (max-width: 768px) {
-  #gym-wieg .image .card {
+  #gym-wieg .card {
     width: 40%;
   }
 }
-#gym-wieg .infor {
+@media screen and (max-width: 600px) {
+  #gym-wieg .image {
+    height: 20%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #gym-wieg {
+    height: 50%;
+  }
+}
+.infor {
   background: rgba(226, 169, 11, 0.701);
   height: 140px;
 }
+
 @media screen and (max-width: 768px) {
-  #gym-wieg .infor {
+  .infor {
     height: 100px;
   }
 }
-#gym-wieg .infor {
+@media screen and (max-width: 600px) {
+  .infor {
+    height: 10px;
+  }
+}
+.infor {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#gym-wieg .infor p {
+.infor p {
   font-size: 25px;
   color: white;
   display: flex;
@@ -309,13 +446,24 @@ ul li:hover ul.dropdown {
   width: 90%;
 }
 @media screen and (max-width: 768px) {
-  #gym-wieg .infor p {
+  .infor p {
     font-size: 17px;
     text-align: justify;
   }
 }
-#gym-wieg .man,
-#gym-wieg .woman {
+@media screen and (max-width: 600px) {
+  .infor p {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .infor {
+    height: 90%;
+  }
+}
+.man,
+.woman {
   background-color: rgba(225, 165, 55, 0.804);
   color: white;
   font-size: 30px;
@@ -325,14 +473,15 @@ ul li:hover ul.dropdown {
   align-items: center;
   border-radius: 0px 10px 0px 0px;
 }
+
 @media screen and (max-width: 768px) {
-  #gym-wieg .man,
-  #gym-wieg .woman {
+  .man,
+  .woman {
     width: 100%;
     font-size: 20px;
   }
 }
-#gym-wieg .man {
+.man {
   border-radius: 20px 0px 0px 0px;
 }
 
@@ -350,6 +499,11 @@ ul li:hover ul.dropdown {
     height: 600px;
   }
 }
+@media screen and (max-width: 600px) {
+  #yuga {
+    height: 400px;
+  }
+}
 #yuga h1 {
   background-color: black;
   width: 100px;
@@ -361,6 +515,13 @@ ul li:hover ul.dropdown {
   #yuga h1 {
     font-size: 20px;
     width: 10%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #yuga h1 {
+    font-size: 15px;
+    width: 20%;
+    height: 10px;
   }
 }
 #yuga h1,
@@ -385,6 +546,11 @@ p {
 @media screen and (max-width: 768px) {
   .infromation p {
     font-size: 15px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .infromation p {
+    font-size: 10px;
   }
 }
 
@@ -412,6 +578,15 @@ p {
     height: 150px;
   }
 }
+@media screen and (max-width: 600px) {
+  .yoga1,
+  .yoga2,
+  .yoga3,
+  .yoga4 {
+    width: 30%;
+    height: 20%;
+  }
+}
 #running {
   display: flex;
   justify-content: center;
@@ -431,6 +606,22 @@ p {
   background-size: cover;
 }
 
+@media screen and (max-width: 600px) {
+  #running {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .running-left img {
+    height: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contant p {
+    font-size: 10px;
+    width: 80%;
+  }
+}
 .running-right {
   display: flex;
   gap: 70px;
@@ -441,15 +632,21 @@ p {
   color: white;
 }
 
-.top {
-  display: flex;
-  justify-content: end;
-}
-
 .top-right {
   padding-top: 20px;
 }
 
+@media screen and (max-width: 600px) {
+  .top-right {
+    padding-top: 1px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contant-card p,
+  .contant-card .material-icons {
+    display: none;
+  }
+}
 .running-right .top {
   display: flex;
 }
@@ -475,6 +672,13 @@ p {
     padding-top: 15px;
   }
 }
+@media screen and (max-width: 600px) {
+  .running-right .top .top-right {
+    font-size: 15px;
+    width: 100%;
+    border-radius: 0px;
+  }
+}
 .running-right .contant {
   display: flex;
   justify-content: center;
@@ -488,6 +692,11 @@ p {
   font-style: italic;
 }
 
+@media screen and (max-width: 600px) {
+  .contant h1 span {
+    font-size: 15px;
+  }
+}
 .contant h1 {
   font-style: italic;
 }
@@ -496,6 +705,12 @@ p {
   .running-right {
     font-size: 15px;
     text-align: justify;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contant h1 {
+    font-size: 15px;
+    width: 100%;
   }
 }
 .contant-card {
@@ -524,15 +739,20 @@ p {
   color: black;
 }
 
+@media screen and (max-width: 600px) {
+  .card p {
+    font-size: 10px;
+  }
+}
 #battle-ropes {
   background-color: rgba(225, 165, 55, 0.804);
   height: 650px;
   margin-top: 20px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   #battle-ropes {
-    height: 550px;
+    height: 400px;
   }
 }
 .spt-battle1 {
@@ -542,6 +762,11 @@ p {
   justify-content: end;
 }
 
+@media screen and (max-width: 600px) {
+  .spt-battle1 {
+    height: 8%;
+  }
+}
 .battle {
   background: #000;
   color: white;
@@ -560,11 +785,17 @@ p {
     height: 45px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   .battle {
-    font-size: 12px;
-    width: 150px;
-    height: 50px;
+    font-size: 10px;
+    width: 80px;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .battle h1 {
+    font-size: 10px;
+    width: 100%;
   }
 }
 .spt-battle2 {
@@ -580,9 +811,9 @@ p {
     height: 300px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   .spt-battle2 {
-    height: 280px;
+    height: 250px;
     padding-bottom: 5px;
   }
 }
@@ -609,9 +840,10 @@ p {
     height: 290px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   .box {
-    height: 250px;
+    height: 100px;
+    width: 30%;
   }
 }
 .picture {
@@ -623,9 +855,10 @@ p {
     height: 200px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   .picture {
-    height: 200px;
+    height: 130px;
+    width: 100%;
   }
 }
 .para1 {
@@ -644,11 +877,12 @@ p {
     padding-top: 20px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   .para1 {
     height: 40px;
     padding: 5px;
     font-size: 10px;
+    width: 90%;
   }
 }
 .para1 .material-icons {
@@ -664,10 +898,10 @@ p {
     font-size: 15px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   .para1 p {
     width: 100px;
-    font-size: 15px;
+    font-size: 10px;
     text-align: center;
   }
 }
@@ -683,16 +917,22 @@ p {
     height: 200px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   .picture img {
-    width: 160px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
   }
 }
 @media screen and (max-width: 768px) {
   .para1 .material-icons {
     color: orange;
     font-size: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .para1 .material-icons {
+    color: orange;
+    font-size: 20px;
   }
 }
 .spt-battle3 {
@@ -704,7 +944,7 @@ p {
   align-items: center;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   .spt-battle3 {
     height: 70px;
     align-items: start;
@@ -720,10 +960,11 @@ p {
     text-align: justify;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   .battle3 p {
-    font-size: 20px;
+    font-size: 10px;
     text-align: justify;
+    padding-top: 20px;
   }
 }
 #volleyball {
@@ -738,7 +979,7 @@ p {
     height: 450px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   #volleyball {
     height: 400px;
   }
@@ -759,10 +1000,11 @@ p {
     text-align: center;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   #volleyball h1 {
-    width: 80px;
-    font-size: 20px;
+    width: 50px;
+    height: 10px;
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -772,11 +1014,11 @@ p {
     font-size: 17px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   .card1 h2,
   .card2 h2,
   .card3 h2 {
-    font-size: 15px;
+    font-size: 8px;
   }
 }
 .volleyball-oficons {
@@ -802,11 +1044,11 @@ p {
   color: white;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   .card1 .material-icons,
   .card2 .material-icons,
   .card3 .material-icons {
-    font-size: 200%;
+    font-size: 100%;
   }
 }
 .volleyball1,
@@ -823,11 +1065,11 @@ p {
     width: 150px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   .volleyball1,
   .volleyball2,
   .volleyball3 {
-    width: 150px;
+    width: 100px;
   }
 }
 .card1 p,
@@ -848,11 +1090,11 @@ p {
     text-align: center;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   .card1 p,
   .card2 p,
   .card3 p {
-    font-size: 15px;
+    font-size: 10px;
     padding: 10px;
   }
 }
@@ -868,7 +1110,7 @@ p {
     height: 550px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   #sport-Tennis {
     height: 500px;
   }
@@ -882,10 +1124,11 @@ p {
     width: 25%;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   .sport-img img {
-    width: 400px;
-    height: 300px;
+    width: 100%;
+    height: 80%;
+    padding-top: 50px;
   }
   .sport-img img:nth-child(2) {
     display: none;
@@ -918,11 +1161,11 @@ p {
     font-size: 23px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   .Tennis-top h1 {
     width: 100px;
-    height: 30px;
-    font-size: 20px;
+    height: 20px;
+    font-size: 15px;
   }
 }
 .Tennis-center p {
@@ -937,10 +1180,12 @@ p {
   .Tennis-center p {
     font-size: 15px;
     text-align: justify;
+    padding-top: 40px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   .Tennis-center p {
+    font-size: 10px;
     text-align: justify;
   }
 }
@@ -984,7 +1229,7 @@ p {
     display: none;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   .tennis-icon1 {
     display: flex;
     justify-content: space-evenly;
@@ -1023,9 +1268,9 @@ p {
     height: 650px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   #sport-Basketball {
-    height: 600px;
+    height: 90%;
   }
 }
 #sport-Basketball > h1 {
@@ -1045,11 +1290,11 @@ p {
     font-size: 20px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   #sport-Basketball > h1 {
-    width: 20%;
-    height: 8vh;
-    font-size: 20px;
+    width: 35%;
+    height: 9vh;
+    font-size: 15px;
   }
 }
 #sport-Basketball h1,
@@ -1062,9 +1307,10 @@ p {
     font-size: 20px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   #sport-Basketball p {
-    font-size: 15px;
+    font-size: 10px;
+    padding-top: 20px;
     text-align: justify;
   }
 }
@@ -1085,9 +1331,9 @@ p {
   text-align: justify;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   .Basketball-top p {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
   }
 }
 .Basketball-first,
@@ -1120,13 +1366,13 @@ p {
     height: 200px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   .basketball1,
   .basketball2,
   .basketball3,
   .basketball4 {
-    width: 250px;
-    height: 200px;
+    width: 40%;
+    height: 60%;
   }
 }
 #swimming {
@@ -1141,9 +1387,9 @@ p {
     height: 450px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   #swimming {
-    height: 600px;
+    height: 380px;
   }
 }
 #swimming h1 {
@@ -1163,11 +1409,11 @@ p {
     font-size: 20px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   #swimming h1 {
-    width: 25%;
-    height: 40px;
-    font-size: 20px;
+    width: 30%;
+    height: 30px;
+    font-size: 15px;
   }
 }
 #swimming p {
@@ -1184,9 +1430,10 @@ p {
     padding-top: 10px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   #swimming p {
-    font-size: 20px;
+    font-size: 15px;
+    padding-top: 20px;
     text-align: justify;
   }
 }
@@ -1200,7 +1447,7 @@ p {
     margin-right: 30px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   .photo-swim {
     justify-content: start;
   }
@@ -1229,10 +1476,10 @@ p {
     height: 150px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   .swimming1 {
-    width: 600px;
-    height: 350px;
+    width: 535%;
+    height: 55%;
     border-radius: 0px;
   }
   .swimming2,
@@ -1254,7 +1501,7 @@ p {
     height: 70px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   .benefit:nth-child(2) {
     display: none;
   }
@@ -1305,9 +1552,9 @@ form {
     width: 90%;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   form {
-    width: 500px;
+    width: 90%;
   }
 }
 .contain-left {
@@ -1320,15 +1567,20 @@ form {
     width: 45%;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   .contain-left {
-    width: 250px;
+    display: none;
   }
 }
 .booking h2 {
   color: orange;
 }
 
+@media screen and (max-width: 600px) {
+  .booking h2 {
+    font-size: 15px;
+  }
+}
 .us-h1 {
   font-size: 35px;
   width: 400px;
@@ -1342,10 +1594,11 @@ form {
     width: 90%;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   .us-h1 {
-    font-size: 20px;
-    width: 200px;
+    font-size: 50px;
+    width: 10px;
+    background: rgb(174, 27, 27) 0;
   }
 }
 .us-pra p {
@@ -1361,10 +1614,10 @@ form {
     width: 90%;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   .us-pra p {
-    font-size: 15px;
-    width: 200px;
+    font-size: 10px;
+    width: 30px;
   }
 }
 .contain-right {
@@ -1376,11 +1629,12 @@ form {
 @media screen and (max-width: 768px) {
   .contain-right {
     width: 45%;
+    border: none;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   .contain-right {
-    width: 250px;
+    width: 80%;
   }
 }
 .booking {
@@ -1394,6 +1648,11 @@ form {
   justify-content: space-evenly;
 }
 
+@media screen and (max-width: 600px) {
+  .user-name {
+    flex-direction: column;
+  }
+}
 @media screen and (max-width: 768px) {
   .last-name input {
     margin-top: 6px;
@@ -1421,25 +1680,18 @@ form {
   .select1,
   .select2,
   .select3 {
-    width: 50%;
-    padding: 6px;
+    width: 20%;
+    padding: 5px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   .user-name input,
   .user-email input,
   .phone-number input,
   .select1,
   .select2,
   .select3 {
-    width: 70px;
-    padding: 8px;
-  }
-}
-@media screen and (max-width: 320px) {
-  .last-name input {
-    padding-left: 30%;
-    margin-top: 5px;
+    width: 100%;
   }
 }
 .user-email input,
@@ -1449,7 +1701,6 @@ form {
 
 @media screen and (max-width: 768px) {
   .user-name {
-    padding-left: 9%;
     width: 100%;
   }
 }
@@ -1459,11 +1710,10 @@ form {
     width: 74%;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   .user-email input,
   .phone-number input {
-    width: 60%;
-    padding-left: 25px;
+    width: 100%;
   }
 }
 .user-email,
@@ -1471,10 +1721,10 @@ form {
   padding: 15px 0px 0px 20px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   .user-email,
   .phone-number {
-    padding: 15px 0px 0px 13px;
+    padding: 15px 0px 0px 0px;
   }
 }
 .firs-name ion-icon,
@@ -1490,11 +1740,12 @@ form {
   padding: 15px 0px 0px 70px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   .sport-type,
   .time-start,
   .time-end {
-    padding: 15px 0px 0px 60px;
+    padding: 15px 0px 0px 0px;
+    width: 105%;
   }
 }
 .select1,
@@ -1503,10 +1754,16 @@ form {
   width: 95%;
 }
 
+@media screen and (max-width: 600px) {
+  .select1,
+  .select2,
+  .select3 {
+    width: 100%;
+  }
+}
 ::-moz-placeholder {
   color: orange;
 }
-
 ::placeholder {
   color: orange;
 }
@@ -1521,9 +1778,9 @@ form {
   padding: 15px 0px 0px 70px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   .user-button {
-    padding: 15px 0px 0px 60px;
+    padding: 15px 0px 0px 80px;
   }
 }
 .user-button button {
@@ -1536,10 +1793,11 @@ form {
   color: white;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   .user-button button {
     padding: 5px;
     width: 90px;
+    background: #000;
   }
 }
 .user-button :hover {
@@ -1547,6 +1805,13 @@ form {
   color: white;
 }
 
+@media screen and (max-width: 600px) {
+  .firs-name ion-icon,
+  .user-email ion-icon,
+  .phone-number ion-icon {
+    display: none;
+  }
+}
 footer {
   background-color: rgba(225, 165, 55, 0.804);
   height: 400px;
@@ -1557,33 +1822,50 @@ footer {
   text-align: center;
 }
 
-footer .card1,
-footer .card2,
-footer .card3 {
+footer .card4,
+footer .card5,
+footer .card6 {
   width: 30%;
   height: 300px;
 }
 
-footer .card1 > h1,
-footer .card2 > h1,
-footer .card3 > h1 {
+footer .card4 > h1,
+footer .card5 > h1,
+footer .card6 > h1 {
   font-size: 20px;
   color: rgb(24, 24, 161);
 }
 
-footer .card1 p,
-footer .card2 p,
-footer .card3 p {
+@media screen and (max-width: 600px) {
+  footer .card4 > h1,
+  footer .card5 > h1,
+  footer .card6 > h1 {
+    width: 100px;
+    color: rgb(24, 24, 161);
+    font-size: 10px;
+  }
+}
+footer .card4 p,
+footer .card5 p,
+footer .card6 p {
   color: rgb(13, 13, 160);
   font-size: 20px;
   padding: 15px;
 }
 
 @media screen and (max-width: 768px) {
-  footer .card1 p,
-  footer .card2 p,
-  footer .card3 p {
+  footer .card4 p,
+  footer .card5 p,
+  footer .card6 p {
     font-size: 18px;
+  }
+}
+@media screen and (max-width: 600px) {
+  footer .card4 p,
+  footer .card5 p,
+  footer .card6 p {
+    font-size: 10px;
+    text-align: start;
   }
 }
 .tik,
@@ -1605,6 +1887,15 @@ footer .card3 p {
     padding: 13px;
   }
 }
+@media screen and (max-width: 600px) {
+  .tik,
+  .face,
+  .tele,
+  .insta,
+  .youtube {
+    padding-right: 20px;
+  }
+}
 .tik-tok,
 .facebook,
 .telegram,
@@ -1623,11 +1914,26 @@ footer .card3 p {
     font-size: 18px;
   }
 }
+@media screen and (max-width: 600px) {
+  .tik-tok,
+  .facebook,
+  .telegram,
+  .instagram,
+  .you-tube {
+    font-size: 10px;
+  }
+}
 ion-icon {
   font-size: 25px;
   padding: 0 10px;
 }
 
+@media screen and (max-width: 600px) {
+  ion-icon {
+    font-size: 15px;
+    padding: 0 10px 0 0;
+  }
+}
 .tik ion-icon {
   color: rgb(0, 0, 11);
 }
@@ -1655,6 +1961,12 @@ ion-icon {
   .map iframe {
     width: 100%;
     height: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .map iframe {
+    width: 80%;
+    height: 10%;
   }
 }
 .address {
